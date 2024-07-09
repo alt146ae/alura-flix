@@ -5,28 +5,35 @@ const MainContainer = styled.div`
     padding-top: 15px;
     width: 100%;
     height: 435px;
-
+    
 `
 
 const EstiloCategorias = styled.h1`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     border-radius: 25px;
     font-size: 32px;
     width: 432px;
     height: 70px;
-    color: brown;
     margin-left: 35px;
-    
 `
 
 
 const Categorias = (props) => {
+
+  const {colorPrimario, colorSecundario,categoria}= props.datos
+
+  const   colorFondo = {
+    backgroundColor: colorPrimario
+  }
+
+  const   colorTitulo = {
+    color: colorSecundario
+  }
   return (
-    <MainContainer>
-    <EstiloCategorias>{props.categoria}</EstiloCategorias>
+    <MainContainer style={colorTitulo}>
+    <EstiloCategorias style={colorFondo} >{categoria}</EstiloCategorias>
     </MainContainer>    
 
   )
