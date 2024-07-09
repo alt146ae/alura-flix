@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { createGlobalStyle } from "styled-components";
 import GoodBakwan from "./Fonts/GoodBakwan.otf"
 import AppleGaramondLight from "./Fonts/AppleGaramondLight.ttf"

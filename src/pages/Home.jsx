@@ -8,6 +8,7 @@ import Categorias from "../components/Categorias"
 
 
 
+
 const FondoLego = styled.div`
   background: linear-gradient(175deg, #6e1806, #8a3f2c, #a56451, #be897a, #d5afa4);
   width: 100%;
@@ -23,9 +24,15 @@ const MainContainer = styled.main`
   margin-bottom: -10px;
   height: 500px;  
 `
+
+//////////////////////Registrar video///////////
+    const registarVideos = (Video) =>   {
+      console.log("Nuevo video", Video);
+    }
+
 ///Lista de Categorias ////
 
-const Home = () => {
+const Home = (props) => {
 
   const categorias = [
     {
@@ -51,7 +58,7 @@ const Home = () => {
   ]
 
 
-
+  
 
   return (
     <FondoLego>
@@ -61,19 +68,19 @@ const Home = () => {
           <Banner texto="LEGO DC"
             backgroundImage={banner}
             videoUrl="https://www.youtube.com/embed/4lEbSsxryBk?si=1lnMUPzqR5_DZzhP" />
-
         </MainContainer>
         {
-          categorias.map((categoria) => <Categorias datos={categoria} key={categoria.categoria} />
-
-
+          categorias.map((categoria) => <Categorias datos={categoria} key={categorias.categoria} >
+          
+          
+          </Categorias>
+          
+          
           )
-
         }
+        
+        
       </AppContainer>
-
-
-
     </FondoLego>
   )
 }

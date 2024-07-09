@@ -1,3 +1,4 @@
+import { useState } from "react"
 import styled from "styled-components"
 import BotonesHeader from "../BotonesHeader"
 import GlobalStyles from "../GlobalStyles"
@@ -19,7 +20,7 @@ const Header = styled.header`
     }
 `
 
-const Cabecera = () => {
+const Cabecera = (props) => {
   return (
    
     <Header>

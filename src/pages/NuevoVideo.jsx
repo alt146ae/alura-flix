@@ -130,13 +130,22 @@ const BotonLimpiar = styled.button`
   }
 `
 
-export const NuevoVideo = () => {
+export const NuevoVideo = (props) => {
+  console.log("props de nuevo",props)
   return (
+    
     <Container>
-      <Titulo> NUEVO   VIDEO </Titulo>
+      
+      <Titulo> NUEVO   VIDEO 
+      
+      </Titulo>
+      
       <Subitutlo> Complete el formulario para crear una nueva tarjeta de video. </Subitutlo>
-    <FormularioNuevo/>
-           
+      
+    <FormularioNuevo 
+    // categorias={categorias.map((categoria) => categoria.categorias)}
+    />
+         
       
     </Container>
     

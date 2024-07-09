@@ -36,7 +36,7 @@ const ListaOpciones = (props) => {
   }
   
 
-
+console.log(props);
 
   return (
     <Columna>

@@ -54,7 +54,7 @@ const BotonesDiv = styled.div`
 `
 
 
-const FormularioNuevo = () => {
+const FormularioNuevo = (props) => {
 
   const [titulo, actualizarTitulo] = useState("")
   const [imagen, actualizarImagen] = useState("")
@@ -91,7 +91,9 @@ const FormularioNuevo = () => {
         <ListaOpciones 
         valor={categoria} 
         actualizarCategoria={actualizarCategoria}
-        
+        //////////
+        categorias={props.categoria}
+        /////////
         />
       </CampoFila>
       <CampoFila>
