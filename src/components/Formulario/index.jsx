@@ -5,6 +5,7 @@ import ListaOpciones from "../ListaOpciones"
 import BotonLimpiar from "../BotonLimpiar"
 import BotonGuardar from "../BotonGuardar"
 import CampoDescripcion from "../Descripcion"
+import axios from "axios";
 
 
 const Formulario = styled.form`
@@ -61,22 +62,44 @@ const FormularioNuevo = (props) => {
   const [video, actualizarVideo] = useState("")
   const [categoria,actualizarCategoria] = useState ("")
   const [descripcion,actualizarDescripcion] = useState ("")
+  const {registrarVideo}= props
 
   const manejarEnvio = (e) => {
     e.preventDefault()
     console.log("Manejar Envio");
-    let DatosAEnviar = {
+   const datosAEnviar = {
       titulo: titulo,
       imagen: imagen,
       video: video,
       categoria: categoria,
       descripcion: descripcion
     }
-    console.log(DatosAEnviar);
+    //console.log(DatosAEnviar);
+//    registrarVideo.log(DatosAEnviar);
+  
 
-  }
+  
+
+// Simulación de una API POST utilizando Axios
+axios.post('http://localhost:3000/videos', datosAEnviar)
+.then(response => {
+  console.log('Datos enviados:', response.data);
+  // Aquí podrías realizar otras acciones después de enviar los datos
+})
+.catch(error => {
+  console.error('Error al enviar datos:', error);
+});
+};
 
 
+const manejarReset = () => {
+  
+  actualizarTitulo("");
+  actualizarImagen("");
+  actualizarVideo("");
+  actualizarCategoria("");
+  actualizarDescripcion("");
+};
 
   return (
     <Formulario onSubmit={manejarEnvio}>
@@ -91,9 +114,8 @@ const FormularioNuevo = (props) => {
         <ListaOpciones 
         valor={categoria} 
         actualizarCategoria={actualizarCategoria}
-        //////////
         categorias={props.categoria}
-        /////////
+        
         />
       </CampoFila>
       <CampoFila>
@@ -119,7 +141,7 @@ const FormularioNuevo = (props) => {
           />
       <BotonesDiv>
         <BotonGuardar type="submit"> Guardar</BotonGuardar>
-        <BotonLimpiar type="reset"> Limpiar </BotonLimpiar>
+        <BotonLimpiar onClick={manejarReset}> Limpiar </BotonLimpiar>
       </BotonesDiv>
     </Formulario>
   )

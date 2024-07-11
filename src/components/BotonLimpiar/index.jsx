@@ -17,7 +17,9 @@ const BotonL = styled.button`
 
 const BotonLimpiar = (props) => {
   return (
-    <BotonL>{props.children}</BotonL>
+    <BotonL type="button" onClick={props.onClick}>
+      {props.children}
+      </BotonL>
   )
 }
 

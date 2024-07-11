@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import categoriaList from "../../res/categorias"
 
 const Columna = styled.div`
   display: flex;
@@ -23,12 +24,9 @@ const SelectCategoria = styled.select`
 
 const ListaOpciones = (props) => {
 
-  const categorias = [
-    "DC",
-    "MARVEL",
-    "ARCHITECTURE",
-    "HARRY POTTER"
-  ]
+  const categoryNames = categoriaList.map(
+    (category) => category.nombre
+  ) 
   
   const manejarCambio = (e) => {
     console.log("cambio",e.target.value);
@@ -36,7 +34,7 @@ const ListaOpciones = (props) => {
   }
   
 
-console.log(props);
+
 
   return (
     <Columna>
@@ -48,9 +46,9 @@ console.log(props);
         name="categoria"
         required>
         <option value="" disabled defaultValue="" hidden>Seleccionar Categoria</option>
-        {categorias.map((equipo, index) =>
+        {categoryNames.map((categoryName, index) =>
           <option key={index} 
-                  value={equipo}>{equipo}</option>
+                  value={categoryName}>{categoryName}</option>
         )}
       </SelectCategoria>
     </Columna>

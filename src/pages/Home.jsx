@@ -1,9 +1,11 @@
+import React, { useEffect, useState } from 'react';
 import styled from "styled-components"
 import GlobalStyles from "../components/GlobalStyles"
-
 import Banner from "../components/Banner"
 import banner from "../assets/banner.jpg"
 import Categorias from "../components/Categorias"
+import categoriaList from "../res/categorias"
+import { api } from "../api/api"
 
 
 
@@ -33,30 +35,24 @@ const MainContainer = styled.main`
 ///Lista de Categorias ////
 
 const Home = (props) => {
+  const [videos, setVideos] = useState([]);
 
-  const categorias = [
-    {
-      categoria: "DC",
-      colorPrimario: "#229ee6",
-      colorSecundario: "#f7f7f7"
-    },
-    {
-      categoria: "MARVEL",
-      colorPrimario: "#12a14b",
-      colorSecundario: "#5115df"
-    },
-    {
-      categoria: "ARCHITECTURE",
-      colorPrimario: "#dd911e",
-      colorSecundario: "#77e67c"
-    },
-    {
-      categoria: "HARRY POTTER",
-      colorPrimario: "#e60a0a",
-      colorSecundario: "#c2e622"
-    },
-  ]
+  useEffect(() => {
+    const fetchVideos = async () => {
+      try {
+        const response = await api.get('/');
+        setVideos(response.data.videos || []);
+      } catch (error) {
+        console.error('Error fetching videos', error);
+      }
+    };
 
+    fetchVideos();
+  }, []);
+
+  const getVideosByCategory = (category) => {
+    return videos.filter(video => video.categoria === category);
+  };
 
   
 
@@ -70,10 +66,15 @@ const Home = (props) => {
             videoUrl="https://www.youtube.com/embed/4lEbSsxryBk?si=1lnMUPzqR5_DZzhP" />
         </MainContainer>
         {
-          categorias.map((categoria) => <Categorias datos={categoria} key={categorias.categoria} >
-          
-          
+          categoriaList.map((categoria) => 
+          <Categorias
+          key={categoria.nombre}  
+          datos={categoria} 
+          videos={getVideosByCategory(categoria.nombre)} 
+           >
+                   
           </Categorias>
+          
           
           
           )

@@ -1,0 +1,52 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "Baticueva Clasica ",
+      "categoria": "DC",
+      "imagen": "https://m.media-amazon.com/images/I/71wRZQkLmAL._AC_UF894,1000_QL80_.jpg",
+      "video": "https://www.youtube.com/watch?v=jpnR5AMcspo",
+      "descripcion": "Video de set lego 76052"
+    },
+    {
+      "id": "2",
+      "titulo": "Hulkbuster ",
+      "categoria": "MARVEL",
+      "imagen": "https://www.lego.com/cdn/cs/set/assets/bltce3ffc1b5664031e/76210_alt1.png?fit=crop&quality=80&width=600&height=600&dpr=1",
+      "video": "https://www.youtube.com/watch?v=r-CMn0OHx68",
+      "descripcion": "Video de set lego 76210"
+    },
+    {
+      "id": "3",
+      "titulo": "LEGO Arquitectura Piramide de Giza ",
+      "categoria": "ARCHITECTURE",
+      "imagen": "https://www.thebrickfan.com/wp-content/uploads/2022/05/LEGO-Architecture-Great-Pyramid-of-Giza-21058-2.jpg",
+      "video": "https://www.youtube.com/watch?v=FPw34MPewGk",
+      "descripcion": "Video de set lego 21058"
+    },
+    {
+      "id": "4",
+      "titulo": "Iconos de Hogwarts",
+      "categoria": "HARRY POTTER",
+      "imagen": "https://www.lego.com/cdn/cs/set/assets/blt63cf13cb7c5b31c9/76391_alt1.jpg",
+      "video": "https://www.youtube.com/watch?v=xykYIF1d8jM",
+      "descripcion": "Video de set lego 76391"
+    },
+    {
+      "id": "2b9d",
+      "titulo": "Baticueva Clasica",
+      "imagen": "https://m.media-amazon.com/images/I/71wRZQkLmAL._AC_UF894,1000_QL80_.jpg",
+      "video": "https://www.youtube.com/watch?v=jpnR5AMcspo",
+      "categoria": "DC",
+      "descripcion": "Video de set lego 76052"
+    },
+    {
+      "id": "5099",
+      "titulo": "Hulkbuster",
+      "imagen": "https://www.lego.com/cdn/cs/set/assets/bltce3ffc1b5664031e/76210_alt1.png?fit=crop&quality=80&width=600&height=600&dpr=1",
+      "video": "https://www.youtube.com/watch?v=r-CMn0OHx68",
+      "categoria": "MARVEL",
+      "descripcion": "Video de set lego 76210"
+    }
+  ]
+}
