@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import React, { useEffect, useState } from 'react';
-import { api } from "../../api/api"
 import BotonBorrar from "../BotonBorrar";
 import BotonsEditar from "../BotonEditar";
 import axios from 'axios';
@@ -31,13 +30,13 @@ const VideosEstilizado = styled.iframe`
   height: 260px;
   border: none;
   border-radius: 10px;
-  border: solid 2px;
+  border: solid 3px;
   border-color: ${(props) => props.colorSecundario};  
 `
 
 
 
-const Videos = ({ colorPrimario }) => {
+const Videos = ({ videoUrl, titulo, colorSecundario }) => {
     const [videos, setVideos] = useState([]);
     
     useEffect(() => {
@@ -74,7 +73,7 @@ const Videos = ({ colorPrimario }) => {
               title={video.titulo}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              borderColor={colorPrimario}
+              colorSecundario={colorSecundario}
               allowFullScreen
             />
         

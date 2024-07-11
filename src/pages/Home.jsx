@@ -4,7 +4,6 @@ import GlobalStyles from "../components/GlobalStyles"
 import Banner from "../components/Banner"
 import banner from "../assets/banner.jpg"
 import Categorias from "../components/Categorias"
-import categoriaList from "../res/categorias"
 import { api } from "../api/api"
 
 
@@ -27,16 +26,27 @@ const MainContainer = styled.main`
   height: 500px;  
 `
 
-//////////////////////Registrar video///////////
-    const registarVideos = (Video) =>   {
-      console.log("Nuevo video", Video);
-    }
-
 ///Lista de Categorias ////
 
-const Home = (props) => {
+const Home = () => {
   const [videos, setVideos] = useState([]);
+  const [categorias, setCategorias] = useState([]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const videosResponse = await api.get('/videos');
+        setVideos(videosResponse.data);
+
+        const categoriasResponse = await api.get('/categoriaList');
+        setCategorias(categoriasResponse.data);
+      } catch (error) {
+        console.error('Error fetching data', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
 
   const getVideosByCategory = (category) => {
@@ -54,22 +64,13 @@ const Home = (props) => {
             backgroundImage={banner}
             videoUrl="https://www.youtube.com/embed/4lEbSsxryBk?si=1lnMUPzqR5_DZzhP" />
         </MainContainer>
-        {
-          categoriaList.map((categoria) => 
+        {categorias.map((categoria) => (
           <Categorias
-          key={categoria.nombre}  
-          datos={categoria} 
-          videos={getVideosByCategory(categoria.nombre)} 
-           >
-                   
-          </Categorias>
-          
-          
-          
-          )
-        }
-        
-        
+            key={categoria.categoriaL}
+            datos={categoria}
+            videos={getVideosByCategory(categoria.categoriaL)}
+          />
+        ))}
       </AppContainer>
     </FondoLego>
   )

@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useEffect,useState } from "react"
 import styled from "styled-components"
 import Videos from "../Videos"
-
+import { api } from "../../api/api"
 
 
 const MainContainer = styled.div`
@@ -38,30 +38,58 @@ const DivVideos = styled.div`
 
 const Categorias = ({ datos,videos }) => {
 
-    // console.log("props de categorias",props);
-  const{colorPrimario, colorSecundario, nombre} = datos
+   // console.log("props de categorias",props);
+  //const{colorPrimario, colorSecundario, nombre} = datos
+
+  // const colorFondo = {
+  //   backgroundColor: colorPrimario
+  // }
+
+  // const colorTitulo = {
+  //   color: colorSecundario
+  // }
+
+  const [categoriaData, setCategoriaData] = useState(null);
+
+  useEffect(() => {
+    const fetchCategorias = async () => {
+      try {
+        const response = await api.get('/categoriaList');
+        const categoria = response.data.find((cat) => cat.categoriaL === datos.categoriaL);
+        setCategoriaData(categoria);
+      } catch (error) {
+        console.error('Error fetching categorias', error);
+      }
+    };
+
+    fetchCategorias();
+  }, [datos.categoriaL]);
+
+  if (!categoriaData) {
+    return null; // O un spinner de carga
+  }
 
   const colorFondo = {
-    backgroundColor: colorPrimario
-  }
+    backgroundColor: categoriaData.colorPrimario
+  };
 
   const colorTitulo = {
-    color: colorSecundario
-  }
+    color: categoriaData.colorSecundario
+  };
 
 
   return (
     <MainContainer style={colorTitulo}>
-    <EstiloCategorias style={colorFondo} >{nombre}</EstiloCategorias>
-    <DivVideos scrollbarColor={colorPrimario}>
-      
+    <EstiloCategorias style={colorFondo} >{datos.categoriaL}</EstiloCategorias>
+    <DivVideos scrollbarColor={categoriaData.colorPrimario}>
+    {videos.map((video) => (
     <Videos
           key={videos.id}
             videoUrl={videos.video}
             titulo={videos.titulo}
-            
-            colorSecundario={colorSecundario}            
+            colorSecundario={categoriaData.colorSecundario}          
               />      
+    ))}
     </DivVideos>
     
     
