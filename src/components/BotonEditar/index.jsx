@@ -11,7 +11,7 @@ const BotonesCategoriaStyled = styled.div`
     justify-content: space-around;
     font-size: 13px;
 `
-const BtBorrar = styled.button`
+const BtEditar = styled.button`
     width: 100px;
     height: 33px;
     color: aliceblue;
@@ -19,21 +19,21 @@ const BtBorrar = styled.button`
     border: 1px solid gold;
     cursor: pointer;
 
-`
+` 
 
-const ImagenBotonBorrar = styled.img`
+const ImagenBotonEditar = styled.img`
     margin-right: 10px;
     width: 15px;
 `
-const BotonBorrar = ({ onClick }) => {
+
+export const BotonsEditar = () => {
   return (
     <BotonesCategoriaStyled>
-        <BtBorrar onClick={onClick}>
-            <ImagenBotonBorrar src="/img/eliminar.png"/>
-            BORRAR
-        </BtBorrar>
+    <BtEditar>
+    <ImagenBotonEditar src="/img/editar.png"/>
+        EDITAR
+    </BtEditar>
     </BotonesCategoriaStyled>
   )
 }
-
-export default BotonBorrar
+export default BotonsEditar

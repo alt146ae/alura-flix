@@ -59,6 +59,7 @@ const Categorias = ({ datos,videos }) => {
           key={videos.id}
             videoUrl={videos.video}
             titulo={videos.titulo}
+            
             colorSecundario={colorSecundario}            
               />      
     </DivVideos>

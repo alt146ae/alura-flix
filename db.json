@@ -1,4 +1,28 @@
 {
+  "categoriaList": [
+    {
+      "categoriaL": "DC",
+      "colorPrimario": "#229ee6",
+      "colorSecundario": "#f7f7f7"
+    },
+    {
+      "categoriaL": "MARVEL",
+      "colorPrimario": "#12a14b",
+      "colorSecundario": "#5115df"
+    },
+    {
+      "categoriaL": "ARCHITECTURE",
+      "colorPrimario": "#dd911e",
+      "colorSecundario": "#77e67c"
+    },
+    {
+      "categoriaL": "HARRY POTTER",
+      "colorPrimario": "#e60a0a",
+      "colorSecundario": "#c2e622"
+    }
+    
+  ],
+
   "videos": [
     {
       "id": "1",
@@ -37,16 +61,8 @@
       "titulo": "Baticueva Clasica",
       "imagen": "https://m.media-amazon.com/images/I/71wRZQkLmAL._AC_UF894,1000_QL80_.jpg",
       "video": "https://www.youtube.com/watch?v=jpnR5AMcspo",
-      "categoria": "DC",
+      "categoria": "DC2",
       "descripcion": "Video de set lego 76052"
-    },
-    {
-      "id": "5099",
-      "titulo": "Hulkbuster",
-      "imagen": "https://www.lego.com/cdn/cs/set/assets/bltce3ffc1b5664031e/76210_alt1.png?fit=crop&quality=80&width=600&height=600&dpr=1",
-      "video": "https://www.youtube.com/watch?v=r-CMn0OHx68",
-      "categoria": "MARVEL",
-      "descripcion": "Video de set lego 76210"
     }
   ]
 }

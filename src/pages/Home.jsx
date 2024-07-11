@@ -37,18 +37,7 @@ const MainContainer = styled.main`
 const Home = (props) => {
   const [videos, setVideos] = useState([]);
 
-  useEffect(() => {
-    const fetchVideos = async () => {
-      try {
-        const response = await api.get('/');
-        setVideos(response.data.videos || []);
-      } catch (error) {
-        console.error('Error fetching videos', error);
-      }
-    };
 
-    fetchVideos();
-  }, []);
 
   const getVideosByCategory = (category) => {
     return videos.filter(video => video.categoria === category);
