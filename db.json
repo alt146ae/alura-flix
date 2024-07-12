@@ -3,7 +3,7 @@
     {
       "categoriaL": "DC",
       "colorPrimario": "#229ee6",
-      "colorSecundario": "#f7f7f7"
+      "colorSecundario": "#b81414"
     },
     {
       "categoriaL": "MARVEL",
@@ -13,12 +13,12 @@
     {
       "categoriaL": "ARCHITECTURE",
       "colorPrimario": "#dd911e",
-      "colorSecundario": "#77e67c"
+      "colorSecundario": "#b334ad"
     },
     {
       "categoriaL": "HARRY POTTER",
       "colorPrimario": "#e60a0a",
-      "colorSecundario": "#c2e622"
+      "colorSecundario": "#efb810"
     }
   ],
   "videos": [
@@ -26,15 +26,15 @@
       "id": "1",
       "titulo": "Baticueva Clasica ",
       "categoria": "DC",
-      "imagen": "https://m.media-amazon.com/images/I/71wRZQkLmAL._AC_UF894,1000_QL80_.jpg",
-      "video": "https://www.youtube.com/watch?v=jpnR5AMcspo",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/76052-1.png",
+      "video": "https://www.youtube.com/embed/jpnR5AMcspo?si=tRQdJHFkfJoMr5sR",
       "descripcion": "Video de set lego 76052"
     },
     {
       "id": "2",
       "titulo": "Hulkbuster ",
       "categoria": "MARVEL",
-      "imagen": "https://www.lego.com/cdn/cs/set/assets/bltce3ffc1b5664031e/76210_alt1.png?fit=crop&quality=80&width=600&height=600&dpr=1",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/76210-1.png",
       "video": "https://www.youtube.com/watch?v=r-CMn0OHx68",
       "descripcion": "Video de set lego 76210"
     },
@@ -42,33 +42,65 @@
       "id": "3",
       "titulo": "LEGO Arquitectura Piramide de Giza ",
       "categoria": "ARCHITECTURE",
-      "imagen": "https://www.thebrickfan.com/wp-content/uploads/2022/05/LEGO-Architecture-Great-Pyramid-of-Giza-21058-2.jpg",
-      "video": "https://www.youtube.com/watch?v=FPw34MPewGk",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/21058-1.png",
+      "video": "https://www.youtube.com/embed/FPw34MPewGk?si=54gYTT8jbWAX6oKc",
       "descripcion": "Video de set lego 21058"
     },
     {
       "id": "4",
       "titulo": "Iconos de Hogwarts",
       "categoria": "HARRY POTTER",
-      "imagen": "https://www.lego.com/cdn/cs/set/assets/blt63cf13cb7c5b31c9/76391_alt1.jpg",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/76391-1.png",
       "video": "https://www.youtube.com/watch?v=xykYIF1d8jM",
       "descripcion": "Video de set lego 76391"
     },
     {
       "id": "32feed53-78bb-4c3a-be4c-e2e9cca47ce0",
       "titulo": "Lego Super Heroes 76035 Jokerland",
-      "imagen": "https://thebrickblogger.com/wp-content/uploads/2015/07/76035-LEGO-Super-Heroes-Jokerland-Review-480x284.jpg",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/76035-1.png",
       "video": "https://www.youtube.com/watch?v=_ww55CANJeQ",
       "categoria": "DC",
-      "descripcion": "The Joker and his team of villains have transformed Gotham City’s amusement park into the nightmarish Jokerland and trapped Starfire,"
+      "descripcion": "The Joker and his team of villains have transformed Gotham Citys amusement park into the nightmarish Jokerland and trapped Starfire,"
     },
     {
       "id": "a315d7f5-6f06-445f-9573-501711bb3d1c",
       "titulo": "Lego Hogwarts Castle",
-      "imagen": "https://www.digvice.mx/cdn/shop/products/91iuUw0mqVL._AC_SL1500.jpg?v=1675186860&width=1214",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/71043-1.png",
       "video": "https://www.youtube.com/watch?v=HfqBKWJPL78",
       "categoria": "HARRY POTTER",
       "descripcion": "Make the magic come alive at the LEGO® Harry Potter™ 71043 Hogwarts™ Castle! This highly detailed LEGO Harry Potter collectible has over 6,000 pieces and offers a rewarding build experience"
+    },
+    {
+      "id": "63a02634-a289-4df4-ab45-b22461d96f63",
+      "titulo": "Himeji Castle",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/21060-1.png",
+      "video": "https://youtu.be/3wC25Qg8YWo?si=AxPvawITKQp9JzG6",
+      "categoria": "ARCHITECTURE",
+      "descripcion": "Celebrate the longevity and majestic beauty of one of Japan is the most revered buildings with this LEGO® Architecture Himeji Castle display model (21060). Be transported to the city of Himeji without leaving home as you recreate authentic details such as the castles turrets, walkways and asymmetric walls in LEGO style. Lift off the top of the main building to view a simplified interpretation of the interior layout. \n"
+    },
+    {
+      "id": "67251316-5ae0-43d9-9740-9da99d9875b4",
+      "titulo": "Batcave - Shadow Box",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/76252-1.png",
+      "video": "https://www.youtube.com/watch?v=riZmF8HnMIw",
+      "categoria": "DC",
+      "descripcion": "Uncover the secrets of the LEGO DC Batman Batcave – Shadow Box with LEGO Designers Bjarke Lykke Maden and Daniel Lundin. Inspired by Batman Returns, this detailed Batcave model is filled with features and functions to discover."
+    },
+    {
+      "id": "855bf2f7-b510-41a0-8eaa-b5bdbacc5112",
+      "titulo": "Batman Batmobile Tumbler",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/76240-1.png",
+      "video": "https://www.youtube.com/watch?v=JKDE_s8g3Z0",
+      "categoria": "DC",
+      "descripcion": "Year Released: 2021\nWeight: 3706g\nItem Dim.: 57.9 x 47.5 x 12.3 cm\nInstructions: Yes"
+    },
+    {
+      "id": "5432adcb-3924-4206-a544-11b22a1a4112",
+      "titulo": "Arkham Asylum Breakout",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/10937-1.png",
+      "video": "https://www.youtube.com/watch?v=NSf4QmxCBYY",
+      "categoria": "DC",
+      "descripcion": "Year Released: 2012\nWeight: 2485g\nItem Dim.: 58 x 47.5 x 8.5 cm\nInstructions: 3 Booklets"
     }
   ]
 }

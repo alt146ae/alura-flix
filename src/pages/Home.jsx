@@ -6,6 +6,7 @@ import banner from "../assets/banner.jpg";
 import Categorias from "../components/Categorias";
 import axios from 'axios';
 
+
 const FondoLego = styled.div`
   background: linear-gradient(175deg, #6e1806, #8a3f2c, #a56451, #be897a, #d5afa4);
   width: 100%;
@@ -28,6 +29,7 @@ const Home = () => {
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
   const [videosByCategory, setVideosByCategory] = useState({});
+  const [selectedVideo, setSelectedVideo] = useState({ url: '', title: '', category: '', description: '' });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -52,22 +54,33 @@ const Home = () => {
     fetchData();
   }, []);
 
+  const handleSelectVideo = (video) => {
+    setSelectedVideo({ url: video.video, title: video.titulo, category: video.categoria, description: video.descripcion });
+  };
+
   return (
     <FondoLego>
       <GlobalStyles />
       <AppContainer>
         <MainContainer>
-          <Banner texto="LEGO DC"
+          <Banner
+            texto="LEGO DC"
             backgroundImage={banner}
-            videoUrl="https://www.youtube.com/embed/4lEbSsxryBk?si=1lnMUPzqR5_DZzhP" />
+            videoUrl={selectedVideo.url}
+            title={selectedVideo.title}
+            category={selectedVideo.category}
+            description={selectedVideo.description}
+          />
         </MainContainer>
         {categorias.map((categoria) => (
           <Categorias
             key={categoria.categoriaL}
             datos={categoria}
             videos={videosByCategory[categoria.categoriaL] || []}
+            onClickVideo={handleSelectVideo} // Pasa la función de selección al componente Categorias
           />
         ))}
+        
       </AppContainer>
     </FondoLego>
   );

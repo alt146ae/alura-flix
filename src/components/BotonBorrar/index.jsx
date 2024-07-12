@@ -12,12 +12,13 @@ const BotonesCategoriaStyled = styled.div`
     font-size: 13px;
 `
 const BtBorrar = styled.button`
-    width: 100px;
+    width: 150px;
     height: 33px;
     color: aliceblue;
     background-color: transparent;
     border: 1px solid gold;
     cursor: pointer;
+    font-size: 1.5em;
 
 `
 

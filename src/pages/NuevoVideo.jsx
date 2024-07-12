@@ -29,106 +29,6 @@ const Subitutlo = styled.h2`
     font-size: 2em;
 `
 
-const Formulario = styled.div`
-  
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 90%;
-  max-width: 80%;
-  
-`
-const TituloFormulario = styled.label`
-    color: white;
-    font-size: 3.5em;
-    padding: 10px;
-    border-top: yellow 5px solid;
-    border-bottom: yellow 5px solid;
-    `
-const CampoFila = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 45px;
-`
-
-const Columna = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-`;
-
-const Etiqueta = styled.label`
-  color: white;
-  font-size: 1.8em;
-  margin: 15px;
-  
-  
-`
-const Input = styled.input`
-  padding: 10px;
-  background-color: black;
-  border: grey 3px solid;
-  border-radius: 15px;
-  font-size: 1.8em;
-  color: white;
-  
-`
-
-const SelectCategoria = styled.select`
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.8em;
-  background-color: white;
-`
-
-
-
-const Descripcion = styled.textarea`
-    width: 773px;
-    height: 220px;
-    color: white;
-    font-size: 1.8em;
-    background-color: black;
-    border: grey 3px solid;
-`
-const ContainerBotones = styled.div`
-    display: flex;
-    gap: 25px;
-
-`
-
-const BotonGuardar = styled.button`
-  padding: 10px;
-  width: 180px;
-  border: blue 4px solid;
-  border-radius: 20px;
-  background-color: #000000;
-  color: white;
-  font-size: 2em;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`
-const BotonLimpiar = styled.button`
-  padding: 10px;
-  width: 180px;
-  border: white 4px solid;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
-  font-size: 2em;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`
 
 export const NuevoVideo = (props) => {
   console.log("props de nuevo",props)
@@ -136,7 +36,7 @@ export const NuevoVideo = (props) => {
     
     <Container>
       
-      <Titulo> NUEVO   VIDEO 
+      <Titulo> NUEVO  VIDEO 
       
       </Titulo>
       
