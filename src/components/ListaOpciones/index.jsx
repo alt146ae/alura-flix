@@ -1,5 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import styled from "styled-components"
-import categoriaList from "../../res/categorias"
+import axios from 'axios';
 
 const Columna = styled.div`
   display: flex;
@@ -24,13 +25,25 @@ const SelectCategoria = styled.select`
 
 const ListaOpciones = (props) => {
 
-  const categoryNames = categoriaList.map(
-    (category) => category.nombre
-  ) 
-  
+  const [categoriaList, setCategoriaList] = useState([]);
+
+  useEffect(() => {
+    const fetchCategorias = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/categoriaList');
+        setCategoriaList(response.data);
+      } catch (error) {
+        console.error('Error fetching categorias', error);
+      }
+    };
+
+    fetchCategorias();
+  }, []);
+
+
+
   const manejarCambio = (e) => {
-    console.log("cambio",e.target.value);
-    props.actualizarCategoria(e.target.value)
+   props.actualizarCategoria(e.target.value)
   }
   
 
@@ -45,11 +58,14 @@ const ListaOpciones = (props) => {
         id="categoria"
         name="categoria"
         required>
-        <option value="" disabled defaultValue="" hidden>Seleccionar Categoria</option>
-        {categoryNames.map((categoryName, index) =>
-          <option key={index} 
-                  value={categoryName}>{categoryName}</option>
-        )}
+        <option value="" disabled defaultValue="" hidden>Seleccionar Categoria
+
+        </option>
+        {categoriaList.map((category, index) => (
+          <option key={index} value={category.categoriaL}>
+            {category.categoriaL}
+          </option>
+        ))}
       </SelectCategoria>
     </Columna>
   )

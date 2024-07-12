@@ -6,7 +6,7 @@ import BotonLimpiar from "../BotonLimpiar"
 import BotonGuardar from "../BotonGuardar"
 import CampoDescripcion from "../Descripcion"
 import axios from "axios";
-
+import { v4 as uuidv4 } from 'uuid';
 
 const Formulario = styled.form`
   
@@ -66,8 +66,9 @@ const FormularioNuevo = (props) => {
 
   const manejarEnvio = (e) => {
     e.preventDefault()
-    console.log("Manejar Envio");
+    
    const datosAEnviar = {
+      id: uuidv4(),
       titulo: titulo,
       imagen: imagen,
       video: video,
@@ -85,6 +86,12 @@ axios.post('http://localhost:3000/videos', datosAEnviar)
 .then(response => {
   console.log('Datos enviados:', response.data);
   // Aquí podrías realizar otras acciones después de enviar los datos
+  if (registrarVideo) {
+    registrarVideo(datosAEnviar); // Actualiza el estado en el componente padre si es necesario
+  }
+  manejarReset();
+  alert("Elemento agregado exitosamente");
+
 })
 .catch(error => {
   console.error('Error al enviar datos:', error);

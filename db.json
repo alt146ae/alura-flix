@@ -20,9 +20,7 @@
       "colorPrimario": "#e60a0a",
       "colorSecundario": "#c2e622"
     }
-    
   ],
-
   "videos": [
     {
       "id": "1",
@@ -57,12 +55,20 @@
       "descripcion": "Video de set lego 76391"
     },
     {
-      "id": "2b9d",
-      "titulo": "Baticueva Clasica",
-      "imagen": "https://m.media-amazon.com/images/I/71wRZQkLmAL._AC_UF894,1000_QL80_.jpg",
-      "video": "https://www.youtube.com/watch?v=jpnR5AMcspo",
-      "categoria": "DC2",
-      "descripcion": "Video de set lego 76052"
+      "id": "32feed53-78bb-4c3a-be4c-e2e9cca47ce0",
+      "titulo": "Lego Super Heroes 76035 Jokerland",
+      "imagen": "https://thebrickblogger.com/wp-content/uploads/2015/07/76035-LEGO-Super-Heroes-Jokerland-Review-480x284.jpg",
+      "video": "https://www.youtube.com/watch?v=_ww55CANJeQ",
+      "categoria": "DC",
+      "descripcion": "The Joker and his team of villains have transformed Gotham City’s amusement park into the nightmarish Jokerland and trapped Starfire,"
+    },
+    {
+      "id": "a315d7f5-6f06-445f-9573-501711bb3d1c",
+      "titulo": "Lego Hogwarts Castle",
+      "imagen": "https://www.digvice.mx/cdn/shop/products/91iuUw0mqVL._AC_SL1500.jpg?v=1675186860&width=1214",
+      "video": "https://www.youtube.com/watch?v=HfqBKWJPL78",
+      "categoria": "HARRY POTTER",
+      "descripcion": "Make the magic come alive at the LEGO® Harry Potter™ 71043 Hogwarts™ Castle! This highly detailed LEGO Harry Potter collectible has over 6,000 pieces and offers a rewarding build experience"
     }
   ]
 }
