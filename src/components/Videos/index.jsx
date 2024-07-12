@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import React from 'react';
+import React, { useState } from 'react';
 import BotonBorrar from "../BotonBorrar";
 import BotonsEditar from "../BotonEditar";
 import axios from 'axios';
-import Categorias from "../Categorias";
+import ModalZoom from "../ModalZoom";
+
+
+
 
 const VideoyBoton = styled.div`
   display: flex;
@@ -41,14 +44,15 @@ const BotonImagen = styled.button`
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-  
-  
   &:hover {
     opacity: 0.8;
   }
 `;
 
 const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecundario ,categoria,descripcion}) => {
+  const [modal, setModal] = useState(false);
+  const Toggle = () => setModal(!modal);
+  
   const eliminarVideo = async () => {
     try {
       await axios.delete(`http://localhost:3000/videos/${id}`);
@@ -58,9 +62,7 @@ const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecund
     }
   };
 
-  const handleClick = () => {
-    onClickVideo(id); // Cambia el video en el componente padre
-  };
+  
 
   return (
     <VideoyBoton>
@@ -77,10 +79,11 @@ const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecund
           </BotonImagen>
           <BotonesContainer>
             <BotonBorrar onClick={eliminarVideo} />
-            <BotonsEditar />
+            <BotonsEditar onClick={Toggle}/>
           </BotonesContainer>
         </VideoWrapper>
       </DivVid>
+      {modal && <ModalZoom onClose={Toggle} />} {/* Renderiza el modal */}
     </VideoyBoton>
   );
 };

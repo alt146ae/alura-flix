@@ -27,10 +27,10 @@ const ImagenBotonEditar = styled.img`
     width: 15px;
 `
 
-export const BotonsEditar = () => {
+export const BotonsEditar = ({onClick}) => {
   return (
     <BotonesCategoriaStyled>
-    <BtEditar>
+    <BtEditar  onClick={onClick}>
     <ImagenBotonEditar src="/img/editar.png"/>
         EDITAR
     </BtEditar>
