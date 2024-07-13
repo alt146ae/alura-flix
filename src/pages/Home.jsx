@@ -65,7 +65,7 @@ const Home = () => {
 
   const handleEditVideo = (video) => {
     setEditVideo(video);
-    Toggle();
+    Toggle(); 
   };
 
   return (
