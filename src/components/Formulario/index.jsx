@@ -131,6 +131,7 @@ const manejarReset = () => {
           placeholder="el enlace es obligatorio"
           valor={imagen}
           actualizarValor={actualizarImagen}
+          
         />
         <CampoTexto 
           titulo="Video"

@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import banner from "../assets/banner.jpg";
 import Categorias from "../components/Categorias";
 import axios from 'axios';
+import ModalZoom from '../components/ModalZoom';
 
 
 const FondoLego = styled.div`
@@ -30,6 +31,10 @@ const Home = () => {
   const [categorias, setCategorias] = useState([]);
   const [videosByCategory, setVideosByCategory] = useState({});
   const [selectedVideo, setSelectedVideo] = useState({ url: '', title: '', category: '', description: '' });
+  const [editVideo, setEditVideo] = useState(null);
+  const [modal, setModal] = useState(false);
+
+  const Toggle = () => setModal(!modal);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -56,6 +61,12 @@ const Home = () => {
 
   const handleSelectVideo = (video) => {
     setSelectedVideo({ url: video.video, title: video.titulo, category: video.categoria, description: video.descripcion });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleEditVideo = (video) => {
+    setEditVideo(video);
+    Toggle();
   };
 
   return (
@@ -71,18 +82,30 @@ const Home = () => {
             category={selectedVideo.category}
             description={selectedVideo.description}
           />
+        
         </MainContainer>
+        
         {categorias.map((categoria) => (
           <Categorias
             key={categoria.categoriaL}
             datos={categoria}
             videos={videosByCategory[categoria.categoriaL] || []}
             onClickVideo={handleSelectVideo} // Pasa la función de selección al componente Categorias
+            onEditVideo={handleEditVideo} 
           />
         ))}
-        
+      {modal && (
+          <ModalZoom
+            onClose={Toggle}
+            video={editVideo}
+            categorias={categorias}
+          />
+        )}
+
       </AppContainer>
+      
     </FondoLego>
+    
   );
 };
 

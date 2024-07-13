@@ -3,31 +3,35 @@
     {
       "categoriaL": "DC",
       "colorPrimario": "#229ee6",
-      "colorSecundario": "#b81414"
+      "colorSecundario": "#b81414",
+      "id": "21a2"
     },
     {
       "categoriaL": "MARVEL",
       "colorPrimario": "#12a14b",
-      "colorSecundario": "#5115df"
+      "colorSecundario": "#5115df",
+      "id": "451f"
     },
     {
       "categoriaL": "ARCHITECTURE",
       "colorPrimario": "#dd911e",
-      "colorSecundario": "#b334ad"
+      "colorSecundario": "#b334ad",
+      "id": "7e24"
     },
     {
       "categoriaL": "HARRY POTTER",
       "colorPrimario": "#e60a0a",
-      "colorSecundario": "#efb810"
+      "colorSecundario": "#efb810",
+      "id": "1655"
     }
   ],
   "videos": [
     {
       "id": "1",
       "titulo": "Baticueva Clasica ",
-      "categoria": "DC",
       "imagen": "https://img.bricklink.com/ItemImage/SN/0/76052-1.png",
       "video": "https://www.youtube.com/embed/jpnR5AMcspo?si=tRQdJHFkfJoMr5sR",
+      "categoria": "DC",
       "descripcion": "Video de set lego 76052"
     },
     {
@@ -80,7 +84,7 @@
     },
     {
       "id": "67251316-5ae0-43d9-9740-9da99d9875b4",
-      "titulo": "Batcave - Shadow Box",
+      "titulo": "Batcave - Shadow Boxa",
       "imagen": "https://img.bricklink.com/ItemImage/SN/0/76252-1.png",
       "video": "https://www.youtube.com/watch?v=riZmF8HnMIw",
       "categoria": "DC",

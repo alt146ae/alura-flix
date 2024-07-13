@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Videos from "../Videos";
 import { api } from "../../api/api";
-import { useNavigate } from "react-router-dom";
+
 
 const MainContainer = styled.div`
   background-color: black;
@@ -30,8 +30,7 @@ const DivVideos = styled.div`
   height: 350px;
   display: flex;
   scrollbar-width: thin;
-  scrollbar-color: ${(props) => props.scrollBarColor} #ffffff; /* Firefox */
-
+  scrollbar-color: ${(props) => props.scrollBarColor} #ffffff; 
   overflow-y: auto;
   margin-left: 40px;
   gap: 50px;
@@ -42,10 +41,10 @@ const NoVideosMessage = styled.p`
   font-size: 5em  ;
 `;
 
-const Categorias = ({ datos, videos, onClickVideo }) => {
+const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
   const [categoriaData, setCategoriaData] = useState(null);
   const [filteredVideos, setFilteredVideos] = useState(videos);
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     const fetchCategorias = async () => {
@@ -69,11 +68,6 @@ const Categorias = ({ datos, videos, onClickVideo }) => {
     setFilteredVideos(filteredVideos.filter((video) => video.id !== id));
   };
 
-  const handleClickVideo = (videoData) => {
-    onClickVideo(videoData); // Llamada a la función para cambiar el video en el componente padre
-    window.scrollTo(0, 0);
-    navigate("/"); // Redirigir a la página de inicio
-  };
 
   if (!categoriaData) {
     return null; // O un spinner de carga
@@ -102,8 +96,10 @@ const Categorias = ({ datos, videos, onClickVideo }) => {
             descripcion={video.descripcion}
             id={video.id}
             onDelete={() => handleDeleteVideo(video.id)}
-            onClickVideo={handleClickVideo}
+            onClickVideo={onClickVideo}
+            onEditVideo={() => onEditVideo(video)} 
             colorSecundario={categoriaData?.colorSecundario}
+
           />
         ))
       ) :(

@@ -3,9 +3,6 @@ import React, { useState } from 'react';
 import BotonBorrar from "../BotonBorrar";
 import BotonsEditar from "../BotonEditar";
 import axios from 'axios';
-import ModalZoom from "../ModalZoom";
-
-
 
 
 const VideoyBoton = styled.div`
@@ -49,9 +46,8 @@ const BotonImagen = styled.button`
   }
 `;
 
-const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecundario ,categoria,descripcion}) => {
-  const [modal, setModal] = useState(false);
-  const Toggle = () => setModal(!modal);
+const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecundario ,categoria,descripcion,onEditVideo}) => {
+
   
   const eliminarVideo = async () => {
     try {
@@ -62,28 +58,34 @@ const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecund
     }
   };
 
-  
+  const handleClickVideo = () => {
+    onClickVideo({ video, titulo, categoria, descripcion });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <VideoyBoton>
       <DivVid>
         <VideoWrapper>
-        <BotonImagen imagen={imagen} colorSecundario={colorSecundario} onClick={() => onClickVideo({ video, titulo,categoria,descripcion})}>
+        <BotonImagen 
+        imagen={imagen} 
+        colorSecundario={colorSecundario} 
+        onClick={handleClickVideo}>
             <span style={{ color: 'white', 
               position: 'absolute', 
               bottom: '10px', left: '10px', 
               backgroundColor: 'rgba(0, 0, 0, 0.5)', 
                }}>
-
+                
             </span>
           </BotonImagen>
           <BotonesContainer>
             <BotonBorrar onClick={eliminarVideo} />
-            <BotonsEditar onClick={Toggle}/>
+            <BotonsEditar onClick={onEditVideo}/>
           </BotonesContainer>
         </VideoWrapper>
       </DivVid>
-      {modal && <ModalZoom onClose={Toggle} />} {/* Renderiza el modal */}
+      
     </VideoyBoton>
   );
 };
