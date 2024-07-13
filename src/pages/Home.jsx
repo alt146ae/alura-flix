@@ -7,7 +7,6 @@ import Categorias from "../components/Categorias";
 import axios from 'axios';
 import ModalZoom from '../components/ModalZoom';
 
-
 const FondoLego = styled.div`
   background: linear-gradient(175deg, #6e1806, #8a3f2c, #a56451, #be897a, #d5afa4);
   width: 100%;
@@ -36,26 +35,26 @@ const Home = () => {
 
   const Toggle = () => setModal(!modal);
 
+  const fetchData = async () => {
+    try {
+      const videosResponse = await axios.get('http://localhost:3000/videos');
+      const categoriasResponse = await axios.get('http://localhost:3000/categoriaList');
+
+      setVideos(videosResponse.data);
+      setCategorias(categoriasResponse.data);
+
+      const videosByCategory = categoriasResponse.data.reduce((acc, categoria) => {
+        acc[categoria.categoriaL] = videosResponse.data.filter(video => video.categoria === categoria.categoriaL);
+        return acc;
+      }, {});
+
+      setVideosByCategory(videosByCategory);
+    } catch (error) {
+      console.error('Error fetching data', error);
+    }
+  };
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const videosResponse = await axios.get('http://localhost:3000/videos');
-        const categoriasResponse = await axios.get('http://localhost:3000/categoriaList');
-
-        setVideos(videosResponse.data);
-        setCategorias(categoriasResponse.data);
-
-        const videosByCategory = categoriasResponse.data.reduce((acc, categoria) => {
-          acc[categoria.categoriaL] = videosResponse.data.filter(video => video.categoria === categoria.categoriaL);
-          return acc;
-        }, {});
-
-        setVideosByCategory(videosByCategory);
-      } catch (error) {
-        console.error('Error fetching data', error);
-      }
-    };
-
     fetchData();
   }, []);
 
@@ -82,30 +81,26 @@ const Home = () => {
             category={selectedVideo.category}
             description={selectedVideo.description}
           />
-        
         </MainContainer>
-        
         {categorias.map((categoria) => (
           <Categorias
             key={categoria.categoriaL}
             datos={categoria}
             videos={videosByCategory[categoria.categoriaL] || []}
-            onClickVideo={handleSelectVideo} // Pasa la función de selección al componente Categorias
-            onEditVideo={handleEditVideo} 
+            onClickVideo={handleSelectVideo}
+            onEditVideo={handleEditVideo}
           />
         ))}
-      {modal && (
+        {modal && (
           <ModalZoom
             onClose={Toggle}
             video={editVideo}
             categorias={categorias}
+            onUpdate={fetchData} // Pasa la función de actualización
           />
         )}
-
       </AppContainer>
-      
     </FondoLego>
-    
   );
 };
 

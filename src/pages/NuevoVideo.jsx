@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { BrowserRouter as Router } from "react-router-dom"
 import FormularioNuevo from "../components/Formulario"
-
+import Swal from "sweetalert2"
 
 
 const Container = styled.div`

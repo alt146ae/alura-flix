@@ -28,7 +28,7 @@
   "videos": [
     {
       "id": "1",
-      "titulo": "Baticueva Clasica ",
+      "titulo": "Baticueva Clasica",
       "imagen": "https://img.bricklink.com/ItemImage/SN/0/76052-1.png",
       "video": "https://www.youtube.com/embed/jpnR5AMcspo?si=tRQdJHFkfJoMr5sR",
       "categoria": "DC",
@@ -64,7 +64,7 @@
       "imagen": "https://img.bricklink.com/ItemImage/SN/0/76035-1.png",
       "video": "https://www.youtube.com/watch?v=_ww55CANJeQ",
       "categoria": "DC",
-      "descripcion": "The Joker and his team of villains have transformed Gotham Citys amusement park into the nightmarish Jokerland and trapped Starfire,"
+      "descripcion": "The Joker and his team of villains have transformed Gotham Citys amusement park into the nightmarish Jokerland and trapped Starfire."
     },
     {
       "id": "a315d7f5-6f06-445f-9573-501711bb3d1c",
@@ -73,14 +73,6 @@
       "video": "https://www.youtube.com/watch?v=HfqBKWJPL78",
       "categoria": "HARRY POTTER",
       "descripcion": "Make the magic come alive at the LEGO® Harry Potter™ 71043 Hogwarts™ Castle! This highly detailed LEGO Harry Potter collectible has over 6,000 pieces and offers a rewarding build experience"
-    },
-    {
-      "id": "63a02634-a289-4df4-ab45-b22461d96f63",
-      "titulo": "Himeji Castle",
-      "imagen": "https://img.bricklink.com/ItemImage/SN/0/21060-1.png",
-      "video": "https://youtu.be/3wC25Qg8YWo?si=AxPvawITKQp9JzG6",
-      "categoria": "ARCHITECTURE",
-      "descripcion": "Celebrate the longevity and majestic beauty of one of Japan is the most revered buildings with this LEGO® Architecture Himeji Castle display model (21060). Be transported to the city of Himeji without leaving home as you recreate authentic details such as the castles turrets, walkways and asymmetric walls in LEGO style. Lift off the top of the main building to view a simplified interpretation of the interior layout. \n"
     },
     {
       "id": "67251316-5ae0-43d9-9740-9da99d9875b4",
@@ -105,6 +97,22 @@
       "video": "https://www.youtube.com/watch?v=NSf4QmxCBYY",
       "categoria": "DC",
       "descripcion": "Year Released: 2012\nWeight: 2485g\nItem Dim.: 58 x 47.5 x 8.5 cm\nInstructions: 3 Booklets"
+    },
+    {
+      "id": "386c6ea7-5f8f-4e57-9b65-5d9668d71205",
+      "titulo": "Himeji Castle",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/21060-1.png",
+      "video": "https://youtu.be/3wC25Qg8YWo?si=AxPvawITKQp9JzG6",
+      "categoria": "ARCHITECTURE",
+      "descripcion": "Celebrate the longevity and majestic beauty of one of Japan’s most revered buildings with this LEGO® Architecture Himeji Castle display model (21060). Be transported to the city of Himeji without leaving home as you recreate authentic details such as the castle’s turrets, walkways and asymmetric walls in LEGO style. Lift off the top of the main building to view a simplified interpretation of the interior layout.\\n"
+    },
+    {
+      "id": "33deb46b-e44c-4ecf-81ec-a29a94b271df",
+      "titulo": "Hogwarts Castle and Grounds",
+      "imagen": "https://img.bricklink.com/ItemImage/SN/0/76419-1.png",
+      "video": "https://www.youtube.com/watch?v=LVq45byCfRM",
+      "categoria": "HARRY POTTER",
+      "descripcion": "Year Released: 2023\nWeight: 3080g\nItem Dim.: 47.8 x 37.5 x 10.9 cm\nInstructions: 2 Booklets"
     }
   ]
 }

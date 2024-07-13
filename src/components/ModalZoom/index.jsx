@@ -9,7 +9,7 @@ const ModalContainer = styled.div`
   left: 50%;;
   transform: translate(-50%, -50%);
   width: 874px;
-  height: 940px;
+  height: 1000px;
   background-color: rgba(18, 32, 116, 0.815);
   display: flex;
   justify-content: center;
@@ -104,14 +104,20 @@ const LabelDescripcion = styled.label`
   font-size: 1.8em;
   color: white;
 `
-const InputDescripcion = styled.input`
+const InputDescripcion = styled.textarea`
     font-size: 1.6em;
+    text-align: justify;
     border-radius: 25px;
     border: solid 7px #257a10;
     width: 573px;
-    height: 100px;
-    overflow-y: auto;
+    height: 150px;
+    white-space: break-word;
+    resize: none;
     margin-bottom: 10px;
+    overflow: auto;
+    
+    margin-bottom: 10px;
+    overflow-x: auto;
 `
 const BotonesContainer = styled.div`
   display: flex;
@@ -138,7 +144,7 @@ const BotonLimpiar = styled.button`
 
 
 
-const ModalZoom = ({ onClose,video, categorias }) => {
+const ModalZoom = ({ onClose,video, categorias,onUpdate }) => {
 
   const [titulo, actualizarTitulo] = useState("");
   const [imagen, actualizarImagen] = useState("")
@@ -148,16 +154,16 @@ const ModalZoom = ({ onClose,video, categorias }) => {
 
   useEffect(() => {
     if (video) {
-      actualizarTitulo(video.titulo);
-      actualizarImagen(video.imagen);
-      actualizarVideo(video.video);
-      actualizarCategoria(video.categoria);
-      actualizarDescripcion(video.descripcion);
+      actualizarTitulo(video.titulo || "");
+      actualizarImagen(video.imagen || "");
+      actualizarVideo(video.video || "");
+      actualizarCategoria(video.categoria || "");
+      actualizarDescripcion(video.descripcion || "");
     }
   }, [video]);
 
 
-  const manejarEnvio = (e) => {
+  const manejarEnvio = async (e) => {
     e.preventDefault()
 
 
@@ -170,17 +176,19 @@ const ModalZoom = ({ onClose,video, categorias }) => {
       descripcion
     };
 
-    axios.put(`http://localhost:3000/videos/${video.id}`, datosAEnviar)
-      .then(response => {
-        console.log('Datos enviados:', response.data);
-        // Aquí podrías realizar otras acciones después de enviar los datos
-        manejarReset();
+    try {
+      const { status } = await axios.put(`http://localhost:3000/videos/${video.id}`, datosAEnviar);
+      if (status !== 200) {
+        alert("Hubo un error al intentar editar el video");
+      } else {
         alert("Elemento actualizado exitosamente");
-        onClose(); // Cierra el modal después de guardar
-      })
-      .catch(error => {
-        console.error('Error al enviar datos:', error);
-      });
+        onUpdate(datosAEnviar); // Llama a la función onUpdate para recargar los datos en el componente padre
+        onClose();
+      }
+    } catch (error) {
+      console.error('Error al enviar datos:', error);
+      alert("Ocurrió un error al intentar actualizar el video.");
+    }
   };
 
 

@@ -98,6 +98,7 @@ const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
             onDelete={() => handleDeleteVideo(video.id)}
             onClickVideo={onClickVideo}
             onEditVideo={() => onEditVideo(video)} 
+            
             colorSecundario={categoriaData?.colorSecundario}
 
           />

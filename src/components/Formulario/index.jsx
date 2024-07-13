@@ -7,6 +7,7 @@ import BotonGuardar from "../BotonGuardar"
 import CampoDescripcion from "../Descripcion"
 import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
+import Swal from "sweetalert2"
 
 const Formulario = styled.form`
   
@@ -90,7 +91,14 @@ axios.post('http://localhost:3000/videos', datosAEnviar)
     registrarVideo(datosAEnviar); // Actualiza el estado en el componente padre si es necesario
   }
   manejarReset();
-  alert("Elemento agregado exitosamente");
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Video agredado correctamente",
+    showConfirmButton: false,
+    timer: 1500
+  });
+  
 
 })
 .catch(error => {

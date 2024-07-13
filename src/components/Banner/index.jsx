@@ -99,7 +99,7 @@ const convertToEmbedUrl = (url) => {
   return match ? `https://www.youtube.com/embed/${match[1]}` : url; // Devuelve el URL original si no hay coincidencia
 };
 
-export const Banner = ({ texto, backgroundImage, videoUrl, title ,category,description}) => {
+export const Banner = ({ backgroundImage, videoUrl, title ,category,description}) => {
   const embedUrl = convertToEmbedUrl(videoUrl);
   return (
     <ImagenBanner $backgroundImage={backgroundImage}>
