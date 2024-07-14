@@ -11,6 +11,7 @@ const ImagenBanner = styled.figure`
   margin: 0;
   max-width: 100%;
   overflow: hidden;
+  
   &::before {
     content: "";
     position: absolute;
@@ -22,12 +23,7 @@ const ImagenBanner = styled.figure`
     background-size: cover;
     z-index: 1;
   }  
-  @media (min-width: 320px) and (max-width: 480px) {
-    display: none;
-  }
-
-`;
-
+`  
 const ContenedorPrincipal = styled.div`
   display: flex;
   justify-content: space-between;
@@ -35,6 +31,13 @@ const ContenedorPrincipal = styled.div`
   width: 100%;
   padding: 20px;
   z-index: 2;
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+    
+  }
 `;
 
 const ContenedorTexto = styled.div`
@@ -44,6 +47,11 @@ const ContenedorTexto = styled.div`
   height: 450px;
   z-index: 2;
   color: #fff; 
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const Categoria = styled.h1`
@@ -59,6 +67,11 @@ const Categoria = styled.h1`
   padding: 0 70px;
   margin: auto;
   z-index: 2;
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 10px;
+    font-size: 2em;
+    
+  }
 `;
 
 const Titulo = styled.h2`
@@ -69,6 +82,10 @@ const Titulo = styled.h2`
   z-index: 2;
   color: green;
   margin-top: 25px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
 `;
 
 const Descripcion = styled.p`
@@ -80,6 +97,10 @@ const Descripcion = styled.p`
   font-family: AppleGaramondLight;
   color: black;
   overflow-x: auto;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    font-size: 1.2em;
+  }
 `;
 
 const IframeEstilizado = styled.iframe`
@@ -92,6 +113,11 @@ const IframeEstilizado = styled.iframe`
   &:hover {
     width: 700px;
     height: 400px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 200px;
+    margin-right: 0;
   }
 `;
 

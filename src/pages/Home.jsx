@@ -25,7 +25,9 @@ const MainContainer = styled.main`
   margin-bottom: -10px;
   height: 500px;  
   @media (min-width: 320px) and (max-width: 480px) {
-    display: none;
+    justify-content: space-between;
+    width:480px;
+    height: 350px;
   }
 `;
 
