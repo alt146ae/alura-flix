@@ -58,7 +58,7 @@ const ImagenBotonCerrar = styled.img`
 `
 
 const Titulo = styled.h1`
-  font-size: 5em;
+  font-size: 4.5em;
   color: white;
   text-align: center;
   margin-top: 10px;
