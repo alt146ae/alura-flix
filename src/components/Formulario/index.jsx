@@ -83,7 +83,7 @@ const FormularioNuevo = (props) => {
   
 
 // Simulación de una API POST utilizando Axios
-axios.post('http://localhost:3000/videos', datosAEnviar)
+axios.post('videos', datosAEnviar)
 .then(response => {
   console.log('Datos enviados:', response.data);
   // Aquí podrías realizar otras acciones después de enviar los datos

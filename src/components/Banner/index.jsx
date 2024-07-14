@@ -20,7 +20,6 @@ const ImagenBanner = styled.figure`
     height: 100%;
     background-image: ${props => `url(${props.$backgroundImage})`};
     background-size: cover;
-    
     z-index: 1;
   }  
 `;

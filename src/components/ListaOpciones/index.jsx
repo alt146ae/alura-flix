@@ -30,7 +30,7 @@ const ListaOpciones = (props) => {
   useEffect(() => {
     const fetchCategorias = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/categoriaList');
+        const response = await axios.get('https://aluraflixapi-sigma.vercel.app/categoriaList');
         setCategoriaList(response.data);
       } catch (error) {
         console.error('Error fetching categorias', error);
