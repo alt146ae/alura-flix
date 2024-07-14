@@ -133,9 +133,9 @@ const InputDescripcion = styled.textarea`
     resize: none;
     margin-bottom: 10px;
     overflow: auto;
-    
     margin-bottom: 10px;
     overflow-x: auto;
+
 `
 const BotonesContainer = styled.div`
   display: flex;
@@ -223,8 +223,8 @@ const ModalZoom = ({ onClose,video, categorias,onUpdate }) => {
 
   return (
     <Overlay>
-    <ModalContainer onClick={onClose}>
-      <ModalContent onClick={(e) => e.stopPropagation()}>
+    <ModalContainer >
+      <ModalContent >
 
 
         <Titulo> EDITAR CARD: </Titulo>
@@ -233,11 +233,13 @@ const ModalZoom = ({ onClose,video, categorias,onUpdate }) => {
           <InputTitulo
             value={titulo}
             onChange={(e) => actualizarTitulo(e.target.value)}
+            required
           />
           <LabelCategoria>Categoria</LabelCategoria>
           <SelectCategoria
             value={categoria}
             onChange={(e) => actualizarCategoria(e.target.value)}
+            required
           >
             {categorias.map((cat) => (
               <option key={cat.categoriaL} value={cat.categoriaL}>
@@ -249,16 +251,19 @@ const ModalZoom = ({ onClose,video, categorias,onUpdate }) => {
           <InputImagen 
            value={imagen}
            onChange={(e) => actualizarImagen(e.target.value)}
+           required
           />
           <LabelVideo>Video</LabelVideo>
           <InputVideo 
           value={videoUrl}
           onChange={(e) => actualizarVideo(e.target.value)}
+          required
           />
           <LabelDescripcion>Descripcion</LabelDescripcion>
           <InputDescripcion 
           value={descripcion}
           onChange={(e) => actualizarDescripcion(e.target.value)}
+          required
           />
 
           <BotonesContainer>
