@@ -109,10 +109,11 @@ const Descripcion = styled.p`
   color: black;
   overflow-x: auto;
   @media (min-width: 320px) and (max-width: 480px) {
-    background-color: red;
+    
     width: 340px;
     height: 100px;
     font-size: 1.1em;
+    margin-left: -10px;
     
   }
 `;
