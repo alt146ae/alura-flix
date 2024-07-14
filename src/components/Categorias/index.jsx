@@ -23,6 +23,10 @@ const EstiloCategorias = styled.h1`
   width: 432px;
   height: 70px;
   margin-left: 35px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width :280px;
+    
+  }
 `;
 
 const DivVideos = styled.div`
