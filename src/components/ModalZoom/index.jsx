@@ -19,12 +19,12 @@ const Overlay = styled.div`
 
 
 const ModalContainer = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;;
+  position: relative;
+  top: 40%;
+  left: 25%;;
   transform: translate(-50%, -50%);
-  width: 874px;
-  height: 1000px;
+  width: 45%;
+  height: 77%;
   background-color: rgba(18, 32, 116, 0.815);
   display: flex;
   justify-content: center;
