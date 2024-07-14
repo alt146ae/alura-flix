@@ -71,7 +71,7 @@ const Categoria = styled.h1`
   margin: auto;
   z-index: 2;
   @media (min-width: 320px) and (max-width: 480px) {
-    height: 10px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +79,7 @@ const Categoria = styled.h1`
     padding: 10px;
     font-size: 1.5em;
     width: 150px;
-    margin-top: 1px;
+    margin-top: 8px;
     
     
   }

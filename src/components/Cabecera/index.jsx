@@ -6,6 +6,7 @@ import GlobalStyles from "../GlobalStyles"
 
 
 
+
 const Header = styled.header`
     
     padding: 40px 50px;
