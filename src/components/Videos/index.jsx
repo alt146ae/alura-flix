@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import React, { useState } from 'react';
+import React from 'react';
 import BotonBorrar from "../BotonBorrar";
 import BotonsEditar from "../BotonEditar";
 import axios from 'axios';
-
+import Swal from "sweetalert2";
 
 const VideoyBoton = styled.div`
   display: flex;
@@ -14,16 +14,13 @@ const VideoyBoton = styled.div`
 const DivVid = styled.div`
   display: flex;
   justify-content: center;
-  
 `;
 
 const VideoWrapper = styled.div`
   align-items: center;
-  
 `;
 
 const BotonesContainer = styled.div`
-  
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -46,15 +43,35 @@ const BotonImagen = styled.button`
   }
 `;
 
-const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecundario ,categoria,descripcion,onEditVideo}) => {
-
-  
+const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecundario, categoria, descripcion, onEditVideo }) => {
   const eliminarVideo = async () => {
-    try {
-      await axios.delete(`https://669347aac6be000fa07a88fe.mockapi.io/videos/${id}`);
-      onDelete(id);
-    } catch (error) {
-      console.error('Error al eliminar video', error);
+    const result = await Swal.fire({
+      title: "¿Deseas borrar el video?",
+      text: "No se podrá revertir!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, bórralo!"
+    });
+
+    if (result.isConfirmed) {
+      try {
+        await axios.delete(`https://669347aac6be000fa07a88fe.mockapi.io/videos/${id}`);
+        onDelete(id);
+        Swal.fire({
+          title: "Borrado!",
+          text: "Tu video ha sido borrado.",
+          icon: "success"
+        });
+      } catch (error) {
+        console.error('Error al eliminar video', error);
+        Swal.fire({
+          title: "Error",
+          text: "Hubo un error al intentar borrar el video.",
+          icon: "error"
+        });
+      }
     }
   };
 
@@ -67,25 +84,21 @@ const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecund
     <VideoyBoton>
       <DivVid>
         <VideoWrapper>
-        <BotonImagen 
-        imagen={imagen} 
-        colorSecundario={colorSecundario} 
-        onClick={handleClickVideo}>
-            <span style={{ color: 'white', 
-              position: 'absolute', 
-              bottom: '10px', left: '10px', 
-              backgroundColor: 'rgba(0, 0, 0, 0.5)', 
-               }}>
-                
+          <BotonImagen 
+            imagen={imagen} 
+            colorSecundario={colorSecundario} 
+            onClick={handleClickVideo}
+          >
+            <span style={{ color: 'white', position: 'absolute', bottom: '10px', left: '10px', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+              {/* Aquí puedes poner el texto que quieras mostrar en la imagen */}
             </span>
           </BotonImagen>
           <BotonesContainer>
             <BotonBorrar onClick={eliminarVideo} />
-            <BotonsEditar onClick={onEditVideo}/>
+            <BotonsEditar onClick={onEditVideo} />
           </BotonesContainer>
         </VideoWrapper>
       </DivVid>
-      
     </VideoyBoton>
   );
 };

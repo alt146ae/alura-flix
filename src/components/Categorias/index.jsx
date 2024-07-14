@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Videos from "../Videos";
 import { api } from "../../api/api";
-import Swal from "sweetalert2"
-
 
 const MainContainer = styled.div`
   background-color: black;
@@ -46,7 +44,6 @@ const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
   const [categoriaData, setCategoriaData] = useState(null);
   const [filteredVideos, setFilteredVideos] = useState(videos);
   
-
   useEffect(() => {
     const fetchCategorias = async () => {
       try {
@@ -67,25 +64,7 @@ const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
 
   const handleDeleteVideo = (id) => {
     setFilteredVideos(filteredVideos.filter((video) => video.id !== id));
-    Swal.fire({
-      title: "¿Deseas Borar el video?",
-      text: "No se podra revertir!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!"
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire({
-          title: "Borrado!",
-          text: "Tu video a sido borrado.",
-          icon: "success"
-        });
-      }
-    });
   };
-
 
   if (!categoriaData) {
     return null; // O un spinner de carga
@@ -113,17 +92,15 @@ const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
             categoria={video.categoria}
             descripcion={video.descripcion}
             id={video.id}
-            onDelete={() => handleDeleteVideo(video.id)}
+            onDelete={handleDeleteVideo}
             onClickVideo={onClickVideo}
             onEditVideo={() => onEditVideo(video)} 
-            
             colorSecundario={categoriaData?.colorSecundario}
-
           />
         ))
-      ) :(
+      ) : (
         <NoVideosMessage>No hay videos disponibles</NoVideosMessage>
-      )        }
+      )}
       </DivVideos>
     </MainContainer>
   );
