@@ -83,7 +83,7 @@ const FormularioNuevo = (props) => {
   
 
 // Simulación de una API POST utilizando Axios
-axios.post('videos', datosAEnviar)
+axios.post('https://669347aac6be000fa07a88fe.mockapi.io/videos', datosAEnviar)
 .then(response => {
   console.log('Datos enviados:', response.data);
   // Aquí podrías realizar otras acciones después de enviar los datos

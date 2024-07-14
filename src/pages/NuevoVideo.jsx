@@ -42,9 +42,7 @@ export const NuevoVideo = (props) => {
       
       <Subitutlo> Complete el formulario para crear una nueva tarjeta de video. </Subitutlo>
       
-    <FormularioNuevo 
-   
-    />
+    <FormularioNuevo/>
          
       
     </Container>
