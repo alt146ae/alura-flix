@@ -22,6 +22,10 @@ const ImagenBanner = styled.figure`
     background-size: cover;
     z-index: 1;
   }  
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+
 `;
 
 const ContenedorPrincipal = styled.div`
