@@ -37,11 +37,7 @@ const ContenedorPrincipal = styled.div`
   z-index: 2;
   @media (min-width: 320px) and (max-width: 480px) {
     flex-direction: column;
-    align-items: flex-start;
-    
-    
-    
-    
+    align-items: flex-start;    
   }
 `;
 
@@ -57,6 +53,7 @@ const ContenedorTexto = styled.div`
     align-items: flex-start;
     width: 340px;
     height: auto;
+    margin-bottom: 10px;
   }
 `;
 
@@ -82,7 +79,7 @@ const Categoria = styled.h1`
     padding: 10px;
     font-size: 1.5em;
     width: 150px;
-    margin-top: 20px;
+    margin-top: 1px;
     
     
   }
@@ -112,8 +109,11 @@ const Descripcion = styled.p`
   color: black;
   overflow-x: auto;
   @media (min-width: 320px) and (max-width: 480px) {
-    width: 100%;
+    background-color: red;
+    width: 340px;
+    height: 100px;
     font-size: 1.1em;
+    
   }
 `;
 
@@ -129,6 +129,7 @@ const IframeEstilizado = styled.iframe`
     height: 400px;
   }
   @media (min-width: 320px) and (max-width: 480px) {
+    
     margin-left: 15px;
     width: 300px;
     height: 180px;
