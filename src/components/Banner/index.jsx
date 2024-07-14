@@ -24,7 +24,7 @@ const ImagenBanner = styled.figure`
     z-index: 1;
   }  
   @media (min-width: 320px) and (max-width: 480px) {
-   
+   width:470px;
    
   }
 `  
