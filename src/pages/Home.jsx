@@ -37,8 +37,8 @@ const Home = () => {
 
   const fetchData = async () => {
     try {
-      const videosResponse = await axios.get('https://aluraflixapi-sigma.vercel.app/videos');
-      const categoriasResponse = await axios.get('https://aluraflixapi-sigma.vercel.app/categoriaList');
+      const videosResponse = await axios.get('https://669347aac6be000fa07a88fe.mockapi.io/videos');
+      const categoriasResponse = await axios.get('https://669347aac6be000fa07a88fe.mockapi.io/categoriaList');
 
       setVideos(videosResponse.data);
       setCategorias(categoriasResponse.data);

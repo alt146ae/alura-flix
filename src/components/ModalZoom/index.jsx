@@ -177,7 +177,7 @@ const ModalZoom = ({ onClose,video, categorias,onUpdate }) => {
     };
 
     try {
-      const { status } = await axios.put(`https://aluraflixapi-sigma.vercel.app/videos/${video.id}`, datosAEnviar);
+      const { status } = await axios.put(`https://669347aac6be000fa07a88fe.mockapi.io/videos/${video.id}`, datosAEnviar);
       if (status !== 200) {
         alert("Hubo un error al intentar editar el video");
       } else {

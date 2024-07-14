@@ -51,7 +51,7 @@ const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecund
   
   const eliminarVideo = async () => {
     try {
-      await axios.delete(`https://aluraflixapi-sigma.vercel.app/videos/${id}`);
+      await axios.delete(`https://669347aac6be000fa07a88fe.mockapi.io/videos/${id}`);
       onDelete(id);
     } catch (error) {
       console.error('Error al eliminar video', error);
