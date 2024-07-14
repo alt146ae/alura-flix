@@ -122,7 +122,7 @@ const manejarReset = () => {
       <CampoFila>
         <CampoTexto
           titulo="Titulo"
-          placeholder="ingrese el título"
+          placeholder="Ingrese el título"
           valor={titulo}
           actualizarValor={actualizarTitulo}
         />
@@ -136,14 +136,14 @@ const manejarReset = () => {
       <CampoFila>
         <CampoTexto
           titulo="Imagen"
-          placeholder="el enlace es obligatorio"
+          placeholder="El enlace es obligatorio"
           valor={imagen}
           actualizarValor={actualizarImagen}
           
         />
         <CampoTexto 
           titulo="Video"
-          placeholder="ingrese el enlace del video" 
+          placeholder="Ingrese el enlace del video" 
           valor={video}
           actualizarValor={actualizarVideo}
           />
@@ -151,7 +151,7 @@ const manejarReset = () => {
       </CampoFila>
       <CampoDescripcion
         titulo="Descripcion"
-        placeholder="Escribe una breve Descripcion del video"
+        placeholder="Escribe una breve descripcion del video"
         valor={descripcion}
         actualizarValor ={actualizarDescripcion}
           />
