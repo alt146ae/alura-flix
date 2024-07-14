@@ -11,9 +11,7 @@ const FondoLego = styled.div`
   background: linear-gradient(175deg, #6e1806, #8a3f2c, #a56451, #be897a, #d5afa4);
   width: 100%;
   min-height: 100vh;
-  @media (min-width: 320px) and (max-width: 480px) {
-    display: none;
-  }
+ 
 `;
 
 const AppContainer = styled.div`
@@ -26,6 +24,9 @@ const MainContainer = styled.main`
   display: flex;
   margin-bottom: -10px;
   height: 500px;  
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Home = () => {
