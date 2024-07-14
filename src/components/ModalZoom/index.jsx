@@ -227,8 +227,9 @@ const ModalZoom = ({ onClose,video, categorias,onUpdate }) => {
       <ModalContent >
 
 
-        <Titulo> EDITAR CARD: </Titulo>
+       
         <Formulario onSubmit={manejarEnvio}>
+        <Titulo> EDITAR CARD: </Titulo>
           <LabelTitulo>Título</LabelTitulo>
           <InputTitulo
             value={titulo}
