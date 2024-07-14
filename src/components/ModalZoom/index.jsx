@@ -20,25 +20,24 @@ const Overlay = styled.div`
 
 const ModalContainer = styled.div`
   position: relative;
-  top: 40%;
+  top: 45%;
   left: 25%;;
   transform: translate(-50%, -50%);
   width: 45%;
-  height: 77%;
+  height: 90%;
   background-color: rgba(18, 32, 116, 0.815);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   border: solid 5px red;
   z-index: 2;
+  padding: 5px;
+  
 `;
-
-
-
 
 const ModalContent = styled.div`
   
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   position: relative;
 `;
@@ -62,6 +61,8 @@ const Titulo = styled.h1`
   font-size: 5em;
   color: white;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `
 
 
@@ -69,6 +70,7 @@ const Formulario = styled.form`
  display: flex;
  flex-direction: column;
  gap: 10px;
+ 
 `
 const LabelTitulo = styled.label`
   font-size: 1.8em;
@@ -78,7 +80,7 @@ const InputTitulo = styled.input`
     font-size: 1.6em;
     border-radius: 25px;
     border: solid 7px #257a10;
-    width: 573px;
+    width: 600px;
     height: 50px;
     margin-bottom: 10px;
 `
@@ -90,7 +92,7 @@ const LabelCategoria = styled.label`
 
 const SelectCategoria = styled.select`
   font-size: 1.8em;
-  width: 573px;
+  width: 600px;
   height: 50px;
 `
 const LabelImagen = styled.label`
@@ -102,7 +104,7 @@ const InputImagen = styled.input`
     font-size: 1.6em;
     border-radius: 25px;
     border: solid 7px #257a10;
-    width: 573px;
+    width: 600px;
     height: 50px;
     margin-bottom: 10px;
 `
@@ -114,7 +116,7 @@ const InputVideo = styled.input`
     font-size: 1.6em;
     border-radius: 25px;
     border: solid 7px #257a10;
-    width: 573px;
+    width: 600px;
     height: 50px;
     margin-bottom: 10px;
 `
@@ -127,7 +129,7 @@ const InputDescripcion = styled.textarea`
     text-align: justify;
     border-radius: 25px;
     border: solid 7px #257a10;
-    width: 573px;
+    width: 600px;
     height: 150px;
     white-space: break-word;
     resize: none;
