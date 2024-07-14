@@ -23,6 +23,10 @@ const ImagenBanner = styled.figure`
     background-size: cover;
     z-index: 1;
   }  
+  @media (min-width: 320px) and (max-width: 480px) {
+   
+   
+  }
 `  
 const ContenedorPrincipal = styled.div`
   display: flex;
@@ -34,6 +38,7 @@ const ContenedorPrincipal = styled.div`
   @media (min-width: 320px) and (max-width: 480px) {
     flex-direction: column;
     align-items: flex-start;
+    
     
     
     
@@ -49,7 +54,8 @@ const ContenedorTexto = styled.div`
   color: #fff; 
   @media (min-width: 320px) and (max-width: 480px) {
     margin-left: 0;
-    width: 100%;
+    align-items: flex-start;
+    width: 340px;
     height: auto;
   }
 `;
@@ -68,8 +74,16 @@ const Categoria = styled.h1`
   margin: auto;
   z-index: 2;
   @media (min-width: 320px) and (max-width: 480px) {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     padding: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
+    width: 150px;
+    margin-top: 20px;
+    
     
   }
 `;
@@ -83,7 +97,7 @@ const Titulo = styled.h2`
   color: green;
   margin-top: 25px;
   @media (min-width: 320px) and (max-width: 480px) {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 10px;
   }
 `;
@@ -99,7 +113,7 @@ const Descripcion = styled.p`
   overflow-x: auto;
   @media (min-width: 320px) and (max-width: 480px) {
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 `;
 
@@ -115,9 +129,14 @@ const IframeEstilizado = styled.iframe`
     height: 400px;
   }
   @media (min-width: 320px) and (max-width: 480px) {
-    width: 100%;
-    height: 200px;
-    margin-right: 0;
+    margin-left: 15px;
+    width: 300px;
+    height: 180px;
+    &:hover {
+      width: 301px;
+      height: 201px;
+  }
+    
   }
 `;
 
