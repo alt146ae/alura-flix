@@ -26,8 +26,8 @@ const MainContainer = styled.main`
   height: 500px;  
   @media (min-width: 320px) and (max-width: 480px) {
     justify-content: space-between;
-    width:480px;
-    height: 430px;
+    width:370px;
+    height: 450px;
   }
 `;
 
