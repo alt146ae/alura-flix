@@ -18,6 +18,10 @@ const Header = styled.header`
         width: 250px;
         
     }
+    @media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+
 `
 
 const Cabecera = (props) => {
