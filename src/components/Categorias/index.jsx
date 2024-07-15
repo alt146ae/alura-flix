@@ -26,7 +26,7 @@ const EstiloCategorias = styled.h1`
   font-size: 32px;
   width: 432px;
   height: 70px;
-  // Elimina el margen si no es necesario
+  
   @media (min-width: 220px) and (max-width: 480px) {
     width: 55lvw;
     margin-left: 15px;
@@ -36,12 +36,13 @@ const EstiloCategorias = styled.h1`
 
 const DivVideos = styled.div`
   margin-left: 20px;
-  
   display: flex;
   scrollbar-width: thin;
   scrollbar-color: ${(props) => props.scrollBarColor} #ffffff; 
   overflow-y: auto;
   gap: 50px;
+  padding-bottom: 20px;
+  flex-wrap: nowrap;
   @media (min-width: 220px) and (max-width: 480px) {
     width: 80lvw;
     margin-left: 15px;

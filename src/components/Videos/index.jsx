@@ -32,6 +32,7 @@ const BotonesContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 350px;
+  gap: 10px;
 `;
 
 const BotonImagen = styled.button`
@@ -47,6 +48,10 @@ const BotonImagen = styled.button`
   position: relative;
   &:hover {
     opacity: 0.8;
+  }
+  @media (max-width: 480px) {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen en pantallas pequeñas */
+    height: 200px; /* Ajusta la altura según sea necesario */
   }
 `;
 
