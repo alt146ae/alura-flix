@@ -49,7 +49,7 @@ export const NuevoVideo = (props) => {
     
     <Container>
       
-      <Titulo> NUEVO  VIDEO 
+      <Titulo> NUEVO  VIDEO :
       
       </Titulo>
       
