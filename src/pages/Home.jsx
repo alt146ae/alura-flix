@@ -64,6 +64,7 @@ const Home = () => {
       setVideosByCategory(videosByCategory);
     } catch (error) {
       console.error('Error fetching data', error);
+      
     }
   };
 
