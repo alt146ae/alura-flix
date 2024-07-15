@@ -13,8 +13,8 @@ function App(props) {
     <Router>
       <Cabecera />
       <Routes>
-        <Route path="https://669347aac6be000fa07a88fe.mockapi.io/" element={<Home />} />
-        <Route path="https://669347aac6be000fa07a88fe.mockapi.io/nuevo" element={<NuevoVideo />} />
+        <Route path="/" element={<Home />} />
+        <Route path="nuevo" element={<NuevoVideo />} />
         <Route path='*' element={<h1>No Existe</h1>} />
       </Routes>
       <Footer />
