@@ -18,6 +18,13 @@ const Formulario = styled.form`
   gap: 15px;
   width: 90%;
   max-width: 80%;
+  @media (min-width: 320px) and (max-width: 480px) {
+      font-size: .4em;
+      width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
 `
 
 const TituloFormulario = styled.label`
@@ -26,6 +33,11 @@ const TituloFormulario = styled.label`
     padding: 10px;
     border-top: yellow 5px solid;
     border-bottom: yellow 5px solid;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.8em;
+      text-align: center;
+      padding: 7px;
+    }
     `
 
 const CampoFila = styled.div`
@@ -33,6 +45,11 @@ const CampoFila = styled.div`
   justify-content: space-between;
   gap: 10px;
   margin-top: 45px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
 `
 
 
@@ -40,6 +57,9 @@ const Etiqueta = styled.label`
   color: white;
   font-size: 1.8em;
   margin: 15px; 
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.2em;
+  }
 `
 
 const Descripcion = styled.textarea`

@@ -13,6 +13,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: baseline;
   width: 100%;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width :480px ;
+    font-size: 1.5em  ;
+    }
 `
 
 
@@ -22,11 +26,19 @@ const Titulo = styled.h1`
     text-align: center;
     font-size: 4em;
     letter-spacing: 10px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.5em  ;
+    }
+
 `
 const Subitutlo = styled.h2`
     color: white;
     text-align: center;
     font-size: 2em;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.2em  ;
+    }
 `
 
 

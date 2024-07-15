@@ -70,6 +70,7 @@ const Categoria = styled.h1`
   padding: 0 70px;
   margin: auto;
   z-index: 2;
+
   @media (min-width: 320px) and (max-width: 480px) {
     height: auto;
     display: flex;

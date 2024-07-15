@@ -6,11 +6,16 @@ const Columna = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  
 `
 const Etiqueta = styled.label`
   color: white;
   font-size: 1.8em;
   margin: 15px; 
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.5em;
+    
+  }
 `
 
 const SelectCategoria = styled.select`
@@ -20,6 +25,9 @@ const SelectCategoria = styled.select`
   font-size: 1.8em;
   background-color: white;
   outline-color: red;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.5em;
+  }
 `
 
 
