@@ -15,7 +15,7 @@ const Pie = styled.footer`
     justify-content: center;
     align-items: first baseline;
     height: 50px;
-    
+    display: block;
   } 
 
 `
