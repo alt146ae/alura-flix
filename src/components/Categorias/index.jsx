@@ -26,7 +26,7 @@ const EstiloCategorias = styled.h1`
   height: 70px;
   // Elimina el margen si no es necesario
   @media (min-width: 320px) and (max-width: 480px) {
-    width: 50vw;
+    width: 55vw;
     margin-left: 15px;
   }
 `;
