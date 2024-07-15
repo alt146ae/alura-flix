@@ -3,10 +3,6 @@ import styled from "styled-components"
 import BotonesHeader from "../BotonesHeader"
 import GlobalStyles from "../GlobalStyles"
 
-
-
-
-
 const Header = styled.header`
     
     padding: 40px 50px;

@@ -13,9 +13,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: baseline;
   width: 100%;
+  
   @media (min-width: 220px) and (max-width: 480px) {
-    height: 130lvh;
-    width :100lvw;
+    
+    
     font-size: 1.5em;
     padding: 1px;
     }

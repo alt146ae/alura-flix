@@ -15,12 +15,12 @@ const FondoLego = styled.div`
 `;
 
 const AppContainer = styled.div`
-  width: 1920px;
+  
   max-width: 100%;
   margin: 0 auto;
   
   @media (min-width: 220px) and (max-width: 480px) {
-    width: 100lvw;
+    width: 100vw;
   max-width: 100%;
   } 
 
