@@ -40,11 +40,11 @@ const ModalContainer = styled.div`
   z-index: 2;
   padding: 5px;
   @media (min-width: 320px) and (max-width: 480px) {
-    height: 85vh;
+    height: 95vh;
     width :80vw;
     font-size: 1.3em;
     padding: 1px;
-    top: 40%;
+    top: 50%;
     left: 40%;
     }
   
@@ -191,6 +191,7 @@ const InputDescripcion = styled.textarea`
     overflow-x: auto;
     @media (min-width: 320px) and (max-width: 480px) {
     width: 70vw;
+    height: 30vh;
     
     }
 
