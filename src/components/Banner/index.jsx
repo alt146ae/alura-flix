@@ -26,6 +26,7 @@ const ImagenBanner = styled.figure`
   @media (min-width: 320px) and (max-width: 480px) {
    width:470px;
    
+   
   }
 `  
 const ContenedorPrincipal = styled.div`
