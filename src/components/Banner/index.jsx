@@ -163,9 +163,9 @@ const IframeEstilizado = styled.iframe`
     height: 500px;
   }
   @media (min-width: 481px) and (max-width: 1024px) {
-    background-color: red;
+    
     width: 90vw;
-    height: 30vh;
+    min-height: 40vh;
     
     pointer-events: none;
 
