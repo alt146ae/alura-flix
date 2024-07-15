@@ -14,6 +14,7 @@ const VideoyBoton = styled.div`
   @media (min-width: 320px) and (max-width: 480px) {
     font-size: 1.3em;
     width: 80vw;
+    
   }
 `;
 

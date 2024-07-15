@@ -13,6 +13,8 @@ const MainContainer = styled.div`
   @media (min-width: 320px) and (max-width: 480px) {
     font-size: 1.3em;
     width: 100vw;
+    
+    
   }
 `;
 
@@ -28,6 +30,7 @@ const EstiloCategorias = styled.h1`
   @media (min-width: 320px) and (max-width: 480px) {
     width: 55vw;
     margin-left: 15px;
+
   }
 `;
 
@@ -42,13 +45,12 @@ const DivVideos = styled.div`
   @media (min-width: 320px) and (max-width: 480px) {
     width: 80vw;
     margin-left: 15px;
+    
+    
   }
 `;
 
-const NoVideosMessage = styled.p`
-  color: #fff;
-  font-size: 5em  ;
-`;
+
 
 const Categorias = ({ datos, videos, onClickVideo, onEditVideo }) => {
   const [categoriaData, setCategoriaData] = useState(null);

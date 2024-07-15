@@ -17,7 +17,7 @@ const Overlay = styled.div`
     z-index: 10;
     @media (min-width: 320px) and (max-width: 480px) {
     position: fixed;
-      height: 100vh;
+    height: 75vh;
     width :100vw;
     font-size: 1.5em;
     padding: 1px;
@@ -40,11 +40,11 @@ const ModalContainer = styled.div`
   z-index: 2;
   padding: 5px;
   @media (min-width: 320px) and (max-width: 480px) {
-    height: 95vh;
+    height: 85vh;
     width :80vw;
     font-size: 1.3em;
     padding: 1px;
-    top: 50%;
+    top: 70%;
     left: 40%;
     }
   
@@ -56,7 +56,7 @@ const ModalContent = styled.div`
   border-radius: 10px;
   position: relative;
   @media (min-width: 320px) and (max-width: 480px) {
-    height: 80vh;
+    height: 85vh;
     width :70vw;
     font-size: .3em;
     padding: 10px;
@@ -191,7 +191,7 @@ const InputDescripcion = styled.textarea`
     overflow-x: auto;
     @media (min-width: 320px) and (max-width: 480px) {
     width: 70vw;
-    height: 30vh;
+    height: 25vh;
     
     }
 
@@ -199,6 +199,12 @@ const InputDescripcion = styled.textarea`
 const BotonesContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    gap: 15px;
+    
+    
+    }
 `
 const BotonGuardar = styled.button`
   width: 181px;
