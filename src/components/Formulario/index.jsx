@@ -20,7 +20,7 @@ const Formulario = styled.form`
   max-width: 80%;
   @media (min-width: 320px) and (max-width: 480px) {
       font-size: .4em;
-      width: 480px;
+      width: 100vw;
       display: flex;
       flex-direction: column;
       gap: 5px;
