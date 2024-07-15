@@ -19,8 +19,8 @@ const AppContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
   
-  @media (min-width: 320px) and (max-width: 480px) {
-    width: 100vw;
+  @media (min-width: 220px) and (max-width: 480px) {
+    width: 100lvw;
   max-width: 100%;
   } 
 
@@ -31,9 +31,9 @@ const MainContainer = styled.main`
   display: flex;
   margin-bottom: -10px;
   height: 500px;  
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     justify-content: space-between;
-    width:100vw;
+    width:100lvw;
     height: 450px;
   }
 `;

@@ -10,9 +10,9 @@ const MainContainer = styled.div`
   box-sizing: border-box;
   text-align: center;
   position: relative;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     font-size: 1.3em;
-    width: 100vw;
+    width: 100lvw;
     
     
   }
@@ -27,8 +27,8 @@ const EstiloCategorias = styled.h1`
   width: 432px;
   height: 70px;
   // Elimina el margen si no es necesario
-  @media (min-width: 320px) and (max-width: 480px) {
-    width: 55vw;
+  @media (min-width: 220px) and (max-width: 480px) {
+    width: 55lvw;
     margin-left: 15px;
 
   }
@@ -42,8 +42,8 @@ const DivVideos = styled.div`
   scrollbar-color: ${(props) => props.scrollBarColor} #ffffff; 
   overflow-y: auto;
   gap: 50px;
-  @media (min-width: 320px) and (max-width: 480px) {
-    width: 80vw;
+  @media (min-width: 220px) and (max-width: 480px) {
+    width: 80lvw;
     margin-left: 15px;
     
     

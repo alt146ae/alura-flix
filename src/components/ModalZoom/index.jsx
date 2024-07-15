@@ -15,10 +15,10 @@ const Overlay = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 10;
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 480px) {
     position: fixed;
-    height: 75vh;
-    width :100vw;
+    height: 75lvh;
+    width :100lvw;
     font-size: 1.5em;
     padding: 1px;
     }
@@ -39,9 +39,9 @@ const ModalContainer = styled.div`
   border: solid 5px red;
   z-index: 2;
   padding: 5px;
-  @media (min-width: 320px) and (max-width: 480px) {
-    height: 85vh;
-    width :80vw;
+  @media (min-width: 220px) and (max-width: 480px) {
+    height: 85lvh;
+    width :80lvw;
     font-size: 1.3em;
     padding: 1px;
     top: 70%;
@@ -55,9 +55,9 @@ const ModalContent = styled.div`
   padding: 10px;
   border-radius: 10px;
   position: relative;
-  @media (min-width: 320px) and (max-width: 480px) {
-    height: 85vh;
-    width :70vw;
+  @media (min-width: 220px) and (max-width: 480px) {
+    height: 85lvh;
+    width :70lvw;
     font-size: .3em;
     padding: 10px;
     }
@@ -71,7 +71,7 @@ const BotonCerrar = styled.button`
   background-color: transparent;
   width: 45px;
   cursor: pointer;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     top: 5px;
     right: 1px;
     
@@ -80,8 +80,8 @@ const BotonCerrar = styled.button`
 const ImagenBotonCerrar = styled.img`
     margin-right: 10px;
     width: 45px;
-    @media (min-width: 320px) and (max-width: 480px) {
-    width: 8vw;
+    @media (min-width: 220px) and (max-width: 480px) {
+    width: 8lvw;
     
     }
 `
@@ -99,9 +99,9 @@ const Formulario = styled.form`
  display: flex;
  flex-direction: column;
  gap: 10px;
- @media (min-width: 320px) and (max-width: 480px) {
-    width: 70vw;
-    height: 80vh;
+ @media (min-width: 220px) and (max-width: 480px) {
+    width: 70lvw;
+    height: 80lvh;
     
     }
  
@@ -118,8 +118,8 @@ const InputTitulo = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
-    @media (min-width: 320px) and (max-width: 480px) {
-    width: 70vw;
+    @media (min-width: 220px) and (max-width: 480px) {
+    width: 70lvw;
     
     }
 
@@ -134,8 +134,8 @@ const SelectCategoria = styled.select`
   font-size: 1.8em;
   width: 600px;
   height: 50px;
-  @media (min-width: 320px) and (max-width: 480px) {
-    width: 70vw;
+  @media (min-width: 220px) and (max-width: 480px) {
+    width: 70lvw;
     
     }
 `
@@ -151,8 +151,8 @@ const InputImagen = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
-    @media (min-width: 320px) and (max-width: 480px) {
-    width: 70vw;
+    @media (min-width: 220px) and (max-width: 480px) {
+    width: 70lvw;
     
     }
 `
@@ -167,8 +167,8 @@ const InputVideo = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
-    @media (min-width: 320px) and (max-width: 480px) {
-    width: 70vw;
+    @media (min-width: 220px) and (max-width: 480px) {
+    width: 70lvw;
     
     }
 `
@@ -189,9 +189,9 @@ const InputDescripcion = styled.textarea`
     overflow: auto;
     margin-bottom: 10px;
     overflow-x: auto;
-    @media (min-width: 320px) and (max-width: 480px) {
-    width: 70vw;
-    height: 25vh;
+    @media (min-width: 220px) and (max-width: 480px) {
+    width: 70lvw;
+    height: 25lvh;
     
     }
 
@@ -199,7 +199,7 @@ const InputDescripcion = styled.textarea`
 const BotonesContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     
     gap: 15px;
     

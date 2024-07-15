@@ -13,9 +13,9 @@ const Container = styled.div`
   align-items: center;
   justify-content: baseline;
   width: 100%;
-  @media (min-width: 320px) and (max-width: 480px) {
-    height: 130vh;
-    width :100vw;
+  @media (min-width: 220px) and (max-width: 480px) {
+    height: 130lvh;
+    width :100lvw;
     font-size: 1.5em;
     padding: 1px;
     }
@@ -28,7 +28,7 @@ const Titulo = styled.h1`
     text-align: center;
     font-size: 4em;
     letter-spacing: 10px;
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 480px) {
       font-size: 1.5em  ;
     }
 
@@ -39,9 +39,9 @@ const Subitutlo = styled.h2`
     text-align: center;
     font-size: 2em;
 
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 480px) {
       font-size: 1.2em  ;
-      width: 90vw;
+      width: 90lvw;
       
     }
 `

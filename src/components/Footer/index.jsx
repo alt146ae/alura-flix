@@ -11,19 +11,19 @@ const Pie = styled.footer`
     align-items: flex-end;
     background-image: "./assets/footer.jpg";
     width: 100%;
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 480px) {
     justify-content: center;
     align-items: first baseline;
     height: 50px;
     display: block;
-    width: 100vw;
+    width: 100lvw;
     
   } 
 
 `
 const ImgLogo = styled.img`
     width: 200px;
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 480px) {
     display: none;
   } 
 `
@@ -31,7 +31,7 @@ const Titulo = styled.h2`
     font-size: 1.6em;
     letter-spacing: 3px;
     justify-content: center;
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 480px) {
     display: none;
   } 
 `
@@ -40,17 +40,11 @@ const ContenedorBotones = styled.div`
    display: flex;
    justify-content: center;
       gap: 10px;
-   
-   
-   
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-  }
 `
 
 const ContenedorBotonHome = styled.div`
      display: none;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     display: flex;
     justify-content: center;
     height: 40px;
@@ -78,7 +72,7 @@ const ImagenHome = styled.img`
 `
 const ContenedorBotonNuevo = styled.div`
        display: none;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     display: flex;
     justify-content: center;
     height: 40px;
@@ -98,12 +92,12 @@ const BotonNuevo = styled.button`
   width: 90%;
   height: 100%;
 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     background-image: url("/img/boton-mas.png");
-    background-size: contain; /* Ajusta el tamaño de la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen */
-    color: transparent; /* Oculta el texto si solo quieres la imagen */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: transparent; 
   }
   
 `

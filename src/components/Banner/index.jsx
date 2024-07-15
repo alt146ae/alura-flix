@@ -23,7 +23,7 @@ const ImagenBanner = styled.figure`
     background-size: cover;
     z-index: 1;
   }  
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
    width:470px;
    
    
@@ -36,7 +36,7 @@ const ContenedorPrincipal = styled.div`
   width: 100%;
   padding: 20px;
   z-index: 2;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     flex-direction: column;
     align-items: flex-start;    
   }
@@ -49,7 +49,7 @@ const ContenedorTexto = styled.div`
   height: 450px;
   z-index: 2;
   color: #fff; 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     margin-left: 0;
     align-items: flex-start;
     width: 340px;
@@ -72,7 +72,7 @@ const Categoria = styled.h1`
   margin: auto;
   z-index: 2;
 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     height: auto;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ const Titulo = styled.h2`
   z-index: 2;
   color: green;
   margin-top: 25px;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     font-size: 1.2em;
     margin-top: 10px;
   }
@@ -110,7 +110,7 @@ const Descripcion = styled.p`
   font-family: AppleGaramondLight;
   color: black;
   overflow-x: auto;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     
     width: 340px;
     height: 100px;
@@ -131,7 +131,7 @@ const IframeEstilizado = styled.iframe`
     width: 700px;
     height: 400px;
   }
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     
     margin-left: 15px;
     width: 300px;

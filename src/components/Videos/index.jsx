@@ -11,9 +11,9 @@ const VideoyBoton = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px; // Ajusta este margen si es necesario
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     font-size: 1.3em;
-    width: 80vw;
+    width: 80lvw;
     
   }
 `;

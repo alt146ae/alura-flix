@@ -12,7 +12,7 @@ const Etiqueta = styled.label`
   color: white;
   font-size: 1.8em;
   margin: 15px; 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     font-size: 1.3em;
   }
   
@@ -26,7 +26,7 @@ const Input = styled.input`
   font-size: 1.8em;
   color: white;
   outline-color: red;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 480px) {
     font-size: 1.3em;
     
   }
