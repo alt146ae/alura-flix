@@ -18,6 +18,13 @@ const Header = styled.header`
     @media (min-width: 220px) and (max-width: 480px) {
     display: none;
   }
+  @media (min-width: 481px) and (max-width: 1024px) {
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px 15px;
+    
+    
+  } 
 
 `
 
@@ -26,8 +33,8 @@ const Cabecera = (props) => {
    
     <Header>
       <GlobalStyles/>
-        <img src="img/logo.png" alt="logo de Legoflix" />
-        <iframe src="https://giphy.com/embed/HWLAKKWhzTFrXiBBFf" width="150" height="150" frameBorder="0"> </iframe>
+        <img src="img/logo.png" alt="logo de Legoflix" width="70" height="70"/>
+        <iframe src="https://giphy.com/embed/HWLAKKWhzTFrXiBBFf" width="100" height="120" frameBorder="0"> </iframe>
              
         <BotonesHeader/>
     </Header>

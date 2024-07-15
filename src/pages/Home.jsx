@@ -23,19 +23,23 @@ const AppContainer = styled.div`
     width: 100vw;
   max-width: 100%;
   } 
-
+  
 
 `
 
 const MainContainer = styled.main`
   display: flex;
-  margin-bottom: -10px;
   height: 500px;  
+  @media (min-width: 481px) and (max-width: 1024px) {
+    width: 100vw;
+  max-width: 100%;
+  }
   @media (min-width: 220px) and (max-width: 480px) {
     justify-content: space-between;
     width:100lvw;
     height: 450px;
   }
+  
 `;
 
 const Home = () => {

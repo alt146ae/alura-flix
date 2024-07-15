@@ -8,6 +8,11 @@ const ContainerBotones = styled.div`
     font-size: 1.4em;
     gap: 20px; 
     
+    @media (min-width: 481px) and (max-width: 1024px) {
+        gap: 10px;
+        margin-right: 80px;
+    }
+
     `
 const BotonHome = styled.button`
     height: 64px;
@@ -29,6 +34,11 @@ const BotonHome = styled.button`
         color: yellow; /* Cambia el color del texto al pasar el mouse */
         transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
     }
+    @media (min-width: 481px) and (max-width: 1025px) {
+        width: 150px;
+    }
+
+
 `
 const BotonNuevoVideo = styled.button`
    height: 64px;
@@ -44,6 +54,10 @@ const BotonNuevoVideo = styled.button`
         color: yellow; /* Cambia el color del texto al pasar el mouse */
         transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
     }
+    @media (min-width: 481px) and (max-width: 1025px) {
+        width: 150px;
+    }
+
 `
 
 const BotonesHeader = () => {

@@ -7,7 +7,7 @@ const ImagenBanner = styled.figure`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-height: 550px;
+ min-height: 30vh;
   margin: 0;
   max-width: 100%;
   overflow: hidden;
@@ -23,11 +23,12 @@ const ImagenBanner = styled.figure`
     background-size: cover;
     z-index: 1;
   }  
+  
   @media (min-width: 220px) and (max-width: 480px) {
-   width:470px;
-   
-   
+   width:470px;     
   }
+  
+  
 `  
 const ContenedorPrincipal = styled.div`
   display: flex;
@@ -36,10 +37,19 @@ const ContenedorPrincipal = styled.div`
   width: 100%;
   padding: 20px;
   z-index: 2;
+  @media (min-width: 481px) and (max-width: 1024px) {
+    
+    justify-content: space-evenly;
+    min-width: 100vw;
+    
+    background-color: red;
+  }
   @media (min-width: 220px) and (max-width: 480px) {
+  
     flex-direction: column;
     align-items: flex-start;    
   }
+  
 `;
 
 const ContenedorTexto = styled.div`
@@ -49,12 +59,18 @@ const ContenedorTexto = styled.div`
   height: 450px;
   z-index: 2;
   color: #fff; 
+  @media (min-width: 481px) and (max-width: 1024px) {
+      
+      min-width: 40vw;
+      margin-left: 1vw;
+    }
   @media (min-width: 220px) and (max-width: 480px) {
     margin-left: 0;
     align-items: flex-start;
     width: 340px;
     height: auto;
     margin-bottom: 10px;
+    
   }
 `;
 
@@ -71,7 +87,15 @@ const Categoria = styled.h1`
   padding: 0 70px;
   margin: auto;
   z-index: 2;
-
+  @media (min-width: 481px) and (max-width: 1024px) {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3em;
+    min-width: 10vw;
+    max-width: 20vw;
+    
+    
+  }
   @media (min-width: 220px) and (max-width: 480px) {
     height: auto;
     display: flex;
@@ -110,6 +134,11 @@ const Descripcion = styled.p`
   font-family: AppleGaramondLight;
   color: black;
   overflow-x: auto;
+  @media (min-width: 481px) and (max-width: 1024px) {
+    background-color: green;
+    width: 40vw;
+    
+  }
   @media (min-width: 220px) and (max-width: 480px) {
     
     width: 340px;
@@ -131,9 +160,14 @@ const IframeEstilizado = styled.iframe`
     width: 700px;
     height: 400px;
   }
+  @media (min-width: 481px) and (max-width: 1024px) {
+    width: 120vw;
+    height: 25vh;
+    margin-right: 15vw;
+  }
+  
   @media (min-width: 220px) and (max-width: 480px) {
-    
-    margin-left: 15px;
+        margin-left: 15px;
     width: 300px;
     height: 180px;
     &:hover {
