@@ -42,7 +42,7 @@ const ContenedorPrincipal = styled.div`
     justify-content: space-evenly;
     min-width: 100vw;
     
-    background-color: red;
+    
   }
   @media (min-width: 220px) and (max-width: 480px) {
   
@@ -126,7 +126,7 @@ const Titulo = styled.h2`
 `;
 
 const Descripcion = styled.p`
-  text-align: justify;
+  
   width: 820px;
   max-height: 280px;
   font-size: 1.8em;
@@ -135,8 +135,8 @@ const Descripcion = styled.p`
   color: black;
   overflow-x: auto;
   @media (min-width: 481px) and (max-width: 1024px) {
-    background-color: green;
-    width: 40vw;
+    
+    width: 42vw;
     
   }
   @media (min-width: 220px) and (max-width: 480px) {
@@ -150,20 +150,25 @@ const Descripcion = styled.p`
 `;
 
 const IframeEstilizado = styled.iframe`
-  width: 647px;
+  width: 747px;
   height: 335px;
   border: none;
   border-radius: 10px;
   margin-right: 200px;
+  margin-left: auto;
+  margin-right: 50px;
   z-index: 2;
   &:hover {
     width: 700px;
-    height: 400px;
+    height: 500px;
   }
   @media (min-width: 481px) and (max-width: 1024px) {
-    width: 120vw;
-    height: 25vh;
-    margin-right: 15vw;
+    background-color: red;
+    width: 90vw;
+    height: 30vh;
+    
+    pointer-events: none;
+
   }
   
   @media (min-width: 220px) and (max-width: 480px) {
