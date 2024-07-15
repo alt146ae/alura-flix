@@ -15,6 +15,13 @@ const Overlay = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 10;
+    @media (min-width: 320px) and (max-width: 480px) {
+    position: fixed;
+      height: 100vh;
+    width :100vw;
+    font-size: 1.5em;
+    padding: 1px;
+    }
 `;
 
 
@@ -32,6 +39,14 @@ const ModalContainer = styled.div`
   border: solid 5px red;
   z-index: 2;
   padding: 5px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 85vh;
+    width :80vw;
+    font-size: 1.3em;
+    padding: 1px;
+    top: 40%;
+    left: 40%;
+    }
   
 `;
 
@@ -40,6 +55,12 @@ const ModalContent = styled.div`
   padding: 10px;
   border-radius: 10px;
   position: relative;
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 80vh;
+    width :70vw;
+    font-size: .3em;
+    padding: 10px;
+    }
 `;
 
 const BotonCerrar = styled.button`
@@ -50,11 +71,19 @@ const BotonCerrar = styled.button`
   background-color: transparent;
   width: 45px;
   cursor: pointer;
-  
+  @media (min-width: 320px) and (max-width: 480px) {
+    top: 5px;
+    right: 1px;
+    
+    }
 `
 const ImagenBotonCerrar = styled.img`
     margin-right: 10px;
     width: 45px;
+    @media (min-width: 320px) and (max-width: 480px) {
+    width: 8vw;
+    
+    }
 `
 
 const Titulo = styled.h1`
@@ -70,6 +99,12 @@ const Formulario = styled.form`
  display: flex;
  flex-direction: column;
  gap: 10px;
+ @media (min-width: 320px) and (max-width: 480px) {
+    width: 70vw;
+    height: 80vh;
+    
+    }
+ 
  
 `
 const LabelTitulo = styled.label`
@@ -83,6 +118,11 @@ const InputTitulo = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
+    @media (min-width: 320px) and (max-width: 480px) {
+    width: 70vw;
+    
+    }
+
 `
 
 const LabelCategoria = styled.label`
@@ -94,6 +134,10 @@ const SelectCategoria = styled.select`
   font-size: 1.8em;
   width: 600px;
   height: 50px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 70vw;
+    
+    }
 `
 const LabelImagen = styled.label`
   font-size: 1.8em;
@@ -107,6 +151,10 @@ const InputImagen = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
+    @media (min-width: 320px) and (max-width: 480px) {
+    width: 70vw;
+    
+    }
 `
 const LabelVideo = styled.label`
   font-size: 1.8em;
@@ -119,6 +167,10 @@ const InputVideo = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
+    @media (min-width: 320px) and (max-width: 480px) {
+    width: 70vw;
+    
+    }
 `
 const LabelDescripcion = styled.label`
   font-size: 1.8em;
@@ -137,6 +189,10 @@ const InputDescripcion = styled.textarea`
     overflow: auto;
     margin-bottom: 10px;
     overflow-x: auto;
+    @media (min-width: 320px) and (max-width: 480px) {
+    width: 70vw;
+    
+    }
 
 `
 const BotonesContainer = styled.div`
