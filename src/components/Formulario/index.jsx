@@ -73,6 +73,11 @@ const Descripcion = styled.textarea`
 const BotonesDiv = styled.div`
     display: flex;
     gap: 25px;
+    @media (min-width: 320px) and (max-width: 480px) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
 `
 
 
