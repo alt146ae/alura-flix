@@ -15,7 +15,7 @@ const Container = styled.div`
   width: 100%;
   @media (min-width: 320px) and (max-width: 480px) {
     width :480px ;
-    font-size: 1.5em  ;
+    font-size: 1.5em;
     }
 `
 
