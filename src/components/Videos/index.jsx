@@ -6,9 +6,15 @@ import axios from 'axios';
 import Swal from "sweetalert2";
 
 const VideoyBoton = styled.div`
+  
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px; // Ajusta este margen si es necesario
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.3em;
+    width: 80vw;
+  }
 `;
 
 const DivVid = styled.div`
@@ -91,6 +97,7 @@ const Videos = ({ titulo, video, imagen, id, onDelete, onClickVideo, colorSecund
           >
             <span style={{ color: 'white', position: 'absolute', bottom: '10px', left: '10px', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
               {/* Aquí puedes poner el texto que quieras mostrar en la imagen */}
+              
             </span>
           </BotonImagen>
           <BotonesContainer>

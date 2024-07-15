@@ -29,6 +29,7 @@ const Formulario = styled.form`
 `
 
 const TituloFormulario = styled.label`
+    
     color: white;
     font-size: 3.5em;
     padding: 10px;
@@ -42,6 +43,7 @@ const TituloFormulario = styled.label`
     `
 
 const CampoFila = styled.div`
+
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -53,31 +55,15 @@ const CampoFila = styled.div`
   }
 `
 
-
-const Etiqueta = styled.label`
-  color: white;
-  font-size: 1.8em;
-  margin: 15px; 
-  @media (min-width: 320px) and (max-width: 480px) {
-    font-size: 1.2em;
-  }
-`
-
-const Descripcion = styled.textarea`
-    width: 773px;
-    height: 220px;
-    color: white;
-    font-size: 1.8em;
-    background-color: black;
-    border: grey 3px solid;
-`
 const BotonesDiv = styled.div`
+
     display: flex;
     gap: 25px;
     @media (min-width: 320px) and (max-width: 480px) {
    display: flex;
    flex-direction: column;
    align-items: center;
+   gap: 10px;
   }
 `
 

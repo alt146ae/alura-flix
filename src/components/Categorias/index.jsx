@@ -7,11 +7,13 @@ const MainContainer = styled.div`
   background-color: black;
   padding-top: 15px;
   width: 100%;
-  height: 535px;
   box-sizing: border-box;
-  padding: 32px;
   text-align: center;
   position: relative;
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.3em;
+    width: 100vw;
+  }
 `;
 
 const EstiloCategorias = styled.h1`
@@ -22,21 +24,25 @@ const EstiloCategorias = styled.h1`
   font-size: 32px;
   width: 432px;
   height: 70px;
-  margin-left: 35px;
+  // Elimina el margen si no es necesario
   @media (min-width: 320px) and (max-width: 480px) {
-    width :280px;
-    
+    width: 50vw;
+    margin-left: 15px;
   }
 `;
 
 const DivVideos = styled.div`
-  height: 350px;
+  margin-left: 20px;
+  
   display: flex;
   scrollbar-width: thin;
   scrollbar-color: ${(props) => props.scrollBarColor} #ffffff; 
   overflow-y: auto;
-  margin-left: 40px;
   gap: 50px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 80vw;
+    margin-left: 15px;
+  }
 `;
 
 const NoVideosMessage = styled.p`
@@ -44,10 +50,10 @@ const NoVideosMessage = styled.p`
   font-size: 5em  ;
 `;
 
-const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
+const Categorias = ({ datos, videos, onClickVideo, onEditVideo }) => {
   const [categoriaData, setCategoriaData] = useState(null);
   const [filteredVideos, setFilteredVideos] = useState(videos);
-  
+
   useEffect(() => {
     const fetchCategorias = async () => {
       try {
@@ -84,10 +90,11 @@ const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
 
   return (
     <MainContainer style={colorTitulo}>
-      <EstiloCategorias style={colorFondo}>{datos.categoriaL}</EstiloCategorias>
+      {filteredVideos.length > 0 && (
+        <EstiloCategorias style={colorFondo}>{datos.categoriaL}</EstiloCategorias>
+      )}
       <DivVideos scrollBarColor={categoriaData?.colorPrimario}>
-      {filteredVideos.length > 0 ? (
-        filteredVideos.map((video) => (
+        {filteredVideos.map((video) => (
           <Videos
             key={video.id}
             titulo={video.titulo}
@@ -101,10 +108,7 @@ const Categorias = ({ datos, videos, onClickVideo , onEditVideo }) => {
             onEditVideo={() => onEditVideo(video)} 
             colorSecundario={categoriaData?.colorSecundario}
           />
-        ))
-      ) : (
-        <NoVideosMessage>No hay videos disponibles</NoVideosMessage>
-      )}
+        ))}
       </DivVideos>
     </MainContainer>
   );

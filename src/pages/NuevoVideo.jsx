@@ -14,9 +14,10 @@ const Container = styled.div`
   justify-content: baseline;
   width: 100%;
   @media (min-width: 320px) and (max-width: 480px) {
-    height: 190vh;
+    height: 145vh;
     width :100vw;
     font-size: 1.5em;
+    padding: 1px;
     }
 `
 
@@ -33,12 +34,15 @@ const Titulo = styled.h1`
 
 `
 const Subitutlo = styled.h2`
+
     color: white;
     text-align: center;
     font-size: 2em;
 
     @media (min-width: 320px) and (max-width: 480px) {
       font-size: 1.2em  ;
+      width: 90vw;
+      
     }
 `
 
