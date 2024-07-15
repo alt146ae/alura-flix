@@ -20,7 +20,7 @@ const AppContainer = styled.div`
   margin: 0 auto;
   
   @media (min-width: 320px) and (max-width: 480px) {
-    width: 480px;
+    width: 100vw;
   max-width: 100%;
   } 
 
@@ -33,7 +33,7 @@ const MainContainer = styled.main`
   height: 500px;  
   @media (min-width: 320px) and (max-width: 480px) {
     justify-content: space-between;
-    width:480px;
+    width:100vw;
     height: 450px;
   }
 `;
