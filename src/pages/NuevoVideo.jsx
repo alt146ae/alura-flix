@@ -14,7 +14,7 @@ const Container = styled.div`
   justify-content: baseline;
   width: 100%;
   @media (min-width: 320px) and (max-width: 480px) {
-    height: 145vh;
+    height: 165vh;
     width :100vw;
     font-size: 1.5em;
     padding: 1px;
