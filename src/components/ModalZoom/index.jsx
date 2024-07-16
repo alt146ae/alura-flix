@@ -58,7 +58,7 @@ const ModalContainer = styled.div`
     width: 80vw;
     font-size: 1.3em;
     padding: 1px;
-    top: 40%;
+    top: 45%;
     left: 40%;
   }
 `;
