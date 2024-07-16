@@ -15,16 +15,17 @@ const Header = styled.header`
         width: 250px;
         
     }
-    @media (min-width: 220px) and (max-width: 480px) {
-    display: none;
-  }
-  @media (min-width: 481px) and (max-width: 1024px) {
+    @media (min-width: 781px) and (max-width: 1024px) {
     width: 100vw;
     max-width: 100%;
     padding: 20px 15px;
     
     
   } 
+    @media (min-width: 220px) and (max-width: 780px) {
+    display: none;
+  }
+  
 
 `
 

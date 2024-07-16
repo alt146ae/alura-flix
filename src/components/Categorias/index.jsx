@@ -10,7 +10,7 @@ const MainContainer = styled.div`
   box-sizing: border-box;
   text-align: center;
   position: relative;
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.3em;
     width: 100lvw;
     
@@ -27,7 +27,7 @@ const EstiloCategorias = styled.h1`
   width: 432px;
   height: 70px;
   
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     width: 55lvw;
     margin-left: 15px;
 
@@ -43,7 +43,7 @@ const DivVideos = styled.div`
   gap: 50px;
   padding-bottom: 20px;
   flex-wrap: nowrap;
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     width: 80lvw;
     margin-left: 15px;
     

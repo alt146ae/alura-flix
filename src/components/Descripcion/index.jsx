@@ -6,7 +6,7 @@ const Etiqueta = styled.label`
   color: white;
   font-size: 1.8em;
   margin: 15px; 
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.3em;
   }
 `
@@ -18,7 +18,10 @@ const Descripcion = styled.textarea`
     font-size: 1.8em;
     background-color: black;
     border: grey 3px solid;
-    @media (min-width: 220px) and (max-width: 480px) {
+    @media (min-width: 781px) and (max-width: 1024px) {
+    width: 80dvw;
+  }
+    @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.3em;
     width: 97%;
   }

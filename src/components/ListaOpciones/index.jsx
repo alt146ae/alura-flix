@@ -6,7 +6,7 @@ const Columna = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.5em;
     margin-bottom: -40px;
   }
@@ -16,7 +16,7 @@ const Etiqueta = styled.label`
   color: white;
   font-size: 1.8em;
   margin: 15px; 
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.5em;
 
     
@@ -30,7 +30,7 @@ const SelectCategoria = styled.select`
   font-size: 1.8em;
   background-color: white;
   outline-color: red;
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.5em;
     
   }

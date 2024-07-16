@@ -11,7 +11,7 @@ const VideoyBoton = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px; // Ajusta este margen si es necesario
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.3em;
     width: 80lvw;
     
@@ -49,7 +49,7 @@ const BotonImagen = styled.button`
   &:hover {
     opacity: 0.8;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     max-width: 100%; /* Ajusta el tamaño máximo de la imagen en pantallas pequeñas */
     height: 200px; /* Ajusta la altura según sea necesario */
   }

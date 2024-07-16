@@ -24,7 +24,7 @@ const ImagenBanner = styled.figure`
     z-index: 1;
   }  
   
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
    width:470px;     
   }
   
@@ -37,14 +37,14 @@ const ContenedorPrincipal = styled.div`
   width: 100%;
   padding: 20px;
   z-index: 2;
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 781px) and (max-width: 1024px) {
     
     justify-content: space-evenly;
     min-width: 100vw;
     
     
   }
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
   
     flex-direction: column;
     align-items: flex-start;    
@@ -59,12 +59,12 @@ const ContenedorTexto = styled.div`
   height: 450px;
   z-index: 2;
   color: #fff; 
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 781px) and (max-width: 1024px) {
       
       min-width: 40vw;
       margin-left: 1vw;
     }
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     margin-left: 0;
     align-items: flex-start;
     width: 340px;
@@ -87,7 +87,7 @@ const Categoria = styled.h1`
   padding: 0 70px;
   margin: auto;
   z-index: 2;
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 781px) and (max-width: 1024px) {
     display: flex;
     justify-content: space-evenly;
     font-size: 3em;
@@ -96,7 +96,7 @@ const Categoria = styled.h1`
     
     
   }
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     height: auto;
     display: flex;
     align-items: center;
@@ -119,7 +119,7 @@ const Titulo = styled.h2`
   z-index: 2;
   color: green;
   margin-top: 25px;
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.2em;
     margin-top: 10px;
   }
@@ -134,12 +134,12 @@ const Descripcion = styled.p`
   font-family: AppleGaramondLight;
   color: black;
   overflow-x: auto;
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 781px) and (max-width: 1024px) {
     
     width: 42vw;
     
   }
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     
     width: 340px;
     height: 100px;
@@ -162,16 +162,17 @@ const IframeEstilizado = styled.iframe`
     width: 700px;
     height: 500px;
   }
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 781px) and (max-width: 1024px) {
     
     width: 90vw;
-    min-height: 40vh;
+    min-height: 30vh;
+    max-height: 40vh;
     
     pointer-events: none;
 
   }
   
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
         margin-left: 15px;
     width: 300px;
     height: 180px;

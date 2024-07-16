@@ -13,7 +13,7 @@ const BotonG = styled.button`
   &:hover {
     background-color: #0056b3;
   }
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     font-size: 1.2em;
     margin-top: 15px;
   }

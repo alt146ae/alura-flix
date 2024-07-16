@@ -11,7 +11,7 @@ const Pie = styled.footer`
     align-items: flex-end;
     background-image: "./assets/footer.jpg";
     width: 100%;
-    @media (min-width: 220px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 780px) {
     justify-content: center;
     align-items: first baseline;
     height: 50px;
@@ -23,7 +23,7 @@ const Pie = styled.footer`
 `
 const ImgLogo = styled.img`
     width: 200px;
-    @media (min-width: 220px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 780px) {
     display: none;
   } 
 `
@@ -31,7 +31,7 @@ const Titulo = styled.h2`
     font-size: 1.6em;
     letter-spacing: 3px;
     justify-content: center;
-    @media (min-width: 220px) and (max-width: 480px) {
+    @media (min-width: 220px) and (max-width: 780px) {
     display: none;
   } 
 `
@@ -44,7 +44,7 @@ const ContenedorBotones = styled.div`
 
 const ContenedorBotonHome = styled.div`
      display: none;
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     display: flex;
     justify-content: center;
     height: 40px;
@@ -72,7 +72,7 @@ const ImagenHome = styled.img`
 `
 const ContenedorBotonNuevo = styled.div`
        display: none;
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     display: flex;
     justify-content: center;
     height: 40px;
@@ -92,7 +92,7 @@ const BotonNuevo = styled.button`
   width: 90%;
   height: 100%;
 
-  @media (min-width: 220px) and (max-width: 480px) {
+  @media (min-width: 220px) and (max-width: 780px) {
     background-image: url("/img/boton-mas.png");
     background-size: contain; 
     background-repeat: no-repeat;
