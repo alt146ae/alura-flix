@@ -24,6 +24,7 @@ const ImagenBanner = styled.figure`
     z-index: 1;
   }  
   
+
   @media (min-width: 220px) and (max-width: 780px) {
    width:470px;     
   }
@@ -37,12 +38,17 @@ const ContenedorPrincipal = styled.div`
   width: 100%;
   padding: 20px;
   z-index: 2;
+
+  @media (min-width: 1025px) and (max-width: 1700px) {
+
+    justify-content: space-evenly;
+    width: 100dvw;    
+  }
+  
   @media (min-width: 781px) and (max-width: 1024px) {
     
     justify-content: space-evenly;
-    min-width: 100vw;
-    
-    
+    min-width: 100vw;    
   }
   @media (min-width: 220px) and (max-width: 780px) {
   
@@ -59,6 +65,11 @@ const ContenedorTexto = styled.div`
   height: 450px;
   z-index: 2;
   color: #fff; 
+
+  @media (min-width: 1025px) and (max-width: 1700px) {
+    min-width: 40vw;
+    margin-left: 1vw
+  }
   @media (min-width: 781px) and (max-width: 1024px) {
       
       min-width: 40vw;
@@ -87,6 +98,14 @@ const Categoria = styled.h1`
   padding: 0 70px;
   margin: auto;
   z-index: 2;
+
+  @media (min-width: 1025px) and (max-width: 1700px) {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3em;
+    min-width: 10vw;
+    max-width: 20vw;
+  }
   @media (min-width: 781px) and (max-width: 1024px) {
     display: flex;
     justify-content: space-evenly;
@@ -134,6 +153,13 @@ const Descripcion = styled.p`
   font-family: AppleGaramondLight;
   color: black;
   overflow-x: auto;
+  @media (min-width: 1025px) and (max-width: 1700px) {
+    
+    width: 50vw;
+    font-size: 1.8em;
+    text-align: left;
+    
+  }
   @media (min-width: 781px) and (max-width: 1024px) {
     
     width: 42vw;
@@ -161,6 +187,11 @@ const IframeEstilizado = styled.iframe`
   &:hover {
     width: 700px;
     height: 500px;
+  }
+  @media (min-width: 1025px) and (max-width: 1700px) {
+    pointer-events: none;
+    width: 75vw;
+    margin-left: 14vh;
   }
   @media (min-width: 781px) and (max-width: 1024px) {
     

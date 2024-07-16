@@ -11,6 +11,10 @@ const Pie = styled.footer`
     align-items: flex-end;
     background-image: "./assets/footer.jpg";
     width: 100%;
+    @media (min-width: 781px) and (max-width: 1024px) {
+      font-size: .8em;
+    }
+    
     @media (min-width: 220px) and (max-width: 780px) {
     justify-content: center;
     align-items: first baseline;
