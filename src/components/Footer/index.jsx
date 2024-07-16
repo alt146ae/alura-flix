@@ -106,11 +106,7 @@ const BotonNuevo = styled.button`
   
 `
 
-const ImagenNuevo = styled.img`
-     padding-right: 10px; /* Espacio entre imagen y texto */
-     width: 20px;
-     width: 80%;
-`
+
 
 export const Footer = () => {
   return (
