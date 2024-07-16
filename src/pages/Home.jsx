@@ -11,18 +11,16 @@ const FondoLego = styled.div`
   background: linear-gradient(175deg, #6e1806, #8a3f2c, #a56451, #be897a, #d5afa4);
   width: 100%;
   min-height: 100vh;
- 
+  overflow-x: hidden;
 `;
 
 const AppContainer = styled.div`
   
   max-width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
   
-  @media (min-width: 220px) and (max-width: 780px) {
-    width: 100%;
-  max-width: 100%;
-  } 
+  overflow-x: hidden;
   
 
 `
@@ -35,6 +33,7 @@ const MainContainer = styled.main`
   max-width: 100%;
   }
   @media (min-width: 220px) and (max-width: 780px) {
+    
     justify-content: space-between;
     max-width: 100lvw;
     height: 450px;

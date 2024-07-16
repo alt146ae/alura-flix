@@ -48,7 +48,7 @@ const ContenedorPrincipal = styled.div`
     min-width: 100vw;    
   }
   @media (min-width: 220px) and (max-width: 780px) {
-  
+    
     flex-direction: column;
     align-items: flex-start;    
   }
