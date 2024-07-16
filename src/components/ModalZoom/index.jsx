@@ -15,6 +15,7 @@ const Overlay = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 10;
+    
     @media (min-width: 220px) and (max-width: 780px) {
     position: fixed;
     height: 75lvh;
@@ -39,6 +40,13 @@ const ModalContainer = styled.div`
   border: solid 5px red;
   z-index: 2;
   padding: 5px;
+  @media (min-width: 1025px) and (max-width: 1700px) {
+    height: 74dvh;
+    min-width: 90vw;
+    top: 27%;
+    left: 45%;
+    
+  }
   
   @media (min-width: 781px) and (max-width: 1024px) {
     height: 70dvh;
@@ -63,6 +71,12 @@ const ModalContent = styled.div`
   padding: 10px;
   border-radius: 10px;
   position: relative;
+  
+  @media (min-width: 1025px) and (max-width: 1700px) {
+    font-size: .7em;
+    height: 77dvh;
+  }
+  
   @media (min-width: 781px) and (max-width: 1024px) {
     font-size: .8em;
     height: 70dvh;
@@ -113,6 +127,7 @@ const Formulario = styled.form`
  display: flex;
  flex-direction: column;
  gap: 10px;
+ 
  @media (min-width: 481px) and (max-width: 1024px) {
     height: 65dvh;
  }
@@ -135,6 +150,10 @@ const InputTitulo = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
+    @media (min-width: 1025px) and (max-width: 1700px) {
+   width : 80dvw;
+   
+  }
     @media (min-width: 220px) and (max-width: 780px) {
     width: 70lvw;
     
@@ -145,12 +164,18 @@ const InputTitulo = styled.input`
 const LabelCategoria = styled.label`
   font-size: 1.8em;
   color: white;
+  
 `
 
 const SelectCategoria = styled.select`
   font-size: 1.8em;
   width: 600px;
   height: 50px;
+  border: solid 7px #257a10;
+  @media (min-width: 1025px) and (max-width: 1700px) {
+   width : 80dvw;
+   
+  }
   @media (min-width: 220px) and (max-width: 780px) {
     width: 70lvw;
     
@@ -168,6 +193,10 @@ const InputImagen = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
+    @media (min-width: 1025px) and (max-width: 1700px) {
+   width : 80dvw;
+   
+  }
     @media (min-width: 220px) and (max-width: 780px) {
     width: 70lvw;
     
@@ -184,6 +213,10 @@ const InputVideo = styled.input`
     width: 600px;
     height: 50px;
     margin-bottom: 10px;
+    @media (min-width: 1025px) and (max-width: 1700px) {
+   width : 80dvw;
+   
+  }
     @media (min-width: 220px) and (max-width: 780px) {
     width: 70lvw;
     
@@ -206,6 +239,10 @@ const InputDescripcion = styled.textarea`
     overflow: auto;
     margin-bottom: 10px;
     overflow-x: auto;
+    @media (min-width: 1025px) and (max-width: 1700px) {
+   width : 80dvw;
+   
+  }
     @media (min-width: 220px) and (max-width: 780px) {
     width: 70lvw;
     height: 25lvh;
