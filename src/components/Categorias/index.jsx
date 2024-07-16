@@ -44,7 +44,7 @@ const DivVideos = styled.div`
   padding-bottom: 20px;
   flex-wrap: nowrap;
   @media (min-width: 220px) and (max-width: 780px) {
-    width: 80lvw;
+    width: 100lvw;
     margin-left: 15px;
     
     

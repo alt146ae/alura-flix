@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import axios from "axios";
 import React from 'react'
 import styled from 'styled-components';
+import Swal from "sweetalert2"
 
 
 const Overlay = styled.div`
@@ -318,7 +319,13 @@ const ModalZoom = ({ onClose,video, categorias,onUpdate }) => {
       if (status !== 200) {
         alert("Hubo un error al intentar editar el video");
       } else {
-        alert("Elemento actualizado exitosamente");
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Video actualizado correctamente",
+          showConfirmButton: false,
+          timer: 1500
+        });
         onUpdate(datosAEnviar); // Llama a la función onUpdate para recargar los datos en el componente padre
         onClose();
       }

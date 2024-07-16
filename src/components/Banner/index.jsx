@@ -25,9 +25,6 @@ const ImagenBanner = styled.figure`
   }  
   
 
-  @media (min-width: 220px) and (max-width: 780px) {
-   width:470px;     
-  }
   
   
 `  
