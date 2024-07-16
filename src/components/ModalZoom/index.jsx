@@ -19,7 +19,7 @@ const Overlay = styled.div`
     
     @media (min-width: 220px) and (max-width: 780px) {
     position: fixed;
-    height: 75lvh;
+    
     width :100lvw;
     font-size: 1.5em;
     padding: 1px;
@@ -44,7 +44,7 @@ const ModalContainer = styled.div`
   @media (min-width: 1025px) and (max-width: 1700px) {
     height: 74dvh;
     min-width: 90vw;
-    top: 27%;
+    top: 47%;
     left: 45%;
     
   }
@@ -61,7 +61,7 @@ const ModalContainer = styled.div`
     width :80lvw;
     font-size: 1.3em;
     padding: 1px;
-    top: 70%;
+    top: 40%;
     left: 40%;
     }
   
