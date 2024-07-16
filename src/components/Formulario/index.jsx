@@ -80,6 +80,45 @@ const FormularioNuevo = (props) => {
   const manejarEnvio = (e) => {
     e.preventDefault()
     
+    if (!imagen.startsWith("https://")) {
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "La URL de la imagen debe comenzar con 'https://'",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      return;
+    }
+
+    const validExtensions = [".jpeg", ".jpg", ".png", ".bmp", ".gif"];
+    const hasValidExtension = validExtensions.some((ext) =>
+      imagen.toLowerCase().endsWith(ext)
+    );
+
+    if (!hasValidExtension) {
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "La URL de la imagen debe terminar con .jpeg, .jpg, .png, .bmp o .gif",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      return;
+    }
+    
+    if (!video.startsWith("https://")) {
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "La URL del video debe comenzar con 'https://'",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      return;
+    }
+
+
    const datosAEnviar = {
       id: uuidv4(),
       titulo: titulo,
