@@ -8,10 +8,10 @@
 - [Características de la aplicación](#características)
 
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
-- 
+  
 - [Desarrollador del Proyecto](#/Desarrollador-del-Proyecto)
 
-- - [Conclusión](#conclusión)
+- [Conclusión](#conclusión)
 
 # Descripción del proyecto
 
