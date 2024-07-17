@@ -38,7 +38,7 @@ Este es un proyecto de React que renderiza tarjetas de videos, las cuales se pue
 
   ## Uso
 
-1. Ve a la pagina desplegada en vercer [aqui](https://alura-flix-ten-sandy.vercel.app/)
+1. Ve a la pagina desplegada en vercel [aqui](https://alura-flix-ten-sandy.vercel.app/)
 
 En la interfaz de usuario, podrás ver las tarjetas de videos con un banner que muestra uno de los videos destacados. Podrás:
 
